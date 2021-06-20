@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using ImageGalleryManagement.Application.Contract.Slider;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Collections.Generic;
 
 namespace ServiceHost.Areas.Administration.Pages.ImageGallery.Slider
 {

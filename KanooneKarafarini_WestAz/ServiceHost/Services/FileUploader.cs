@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
-using _0_Framework.Application;
+﻿using _0_Framework.Application;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using System;
+using System.IO;
 
 namespace ServiceHost.Services
 {
@@ -28,7 +28,7 @@ namespace ServiceHost.Services
                 Directory.CreateDirectory(directoryPath);
             }
 
-            var fileName =$"{ DateTime.Now.ToFileName()}-{file.FileName}";
+            var fileName = $"{ DateTime.Now.ToFileName()}-{file.FileName}";
             var filePath = $"{directoryPath}//{fileName}";
             using var output = File.Create(filePath);
             file.CopyTo(output);

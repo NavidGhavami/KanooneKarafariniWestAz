@@ -435,6 +435,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Application.Contract\\ImageGalleryManagement.Application.Contract.csproj": {
+                "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Application.Contract\\ImageGalleryManagement.Application.Contract.csproj"
+              },
               "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Configuration\\ImageGalleryManagement.Configuration.csproj": {
                 "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Configuration\\ImageGalleryManagement.Configuration.csproj"
               }
@@ -450,18 +453,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.7, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
