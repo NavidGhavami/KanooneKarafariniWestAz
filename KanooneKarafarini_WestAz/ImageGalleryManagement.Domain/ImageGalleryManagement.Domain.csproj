@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PictureGallery\IPictureGalleryRepository.cs~RF33837d1.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
+    <ProjectReference Include="..\ImageGalleryManagement.Application.Contract\ImageGalleryManagement.Application.Contract.csproj" />
+  </ItemGroup>
+
+</Project>
