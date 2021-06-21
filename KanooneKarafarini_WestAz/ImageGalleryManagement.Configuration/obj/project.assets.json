@@ -1563,6 +1563,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "01_Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ImageGalleryManagement.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_Query.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5959,6 +5972,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "01_Query/1.0.0": {
+      "type": "project",
+      "path": "../01_Query/01_Query.csproj",
+      "msbuildProject": "../01_Query/01_Query.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
@@ -5987,6 +6005,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "01_Query >= 1.0.0",
       "ImageGalleryManagement.Application >= 1.0.0",
       "ImageGalleryManagement.EFCore >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0"
@@ -6019,6 +6038,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\01_Query\\01_Query.csproj": {
+              "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\01_Query\\01_Query.csproj"
+            },
             "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Application\\ImageGalleryManagement.Application.csproj": {
               "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Application\\ImageGalleryManagement.Application.csproj"
             },
@@ -6058,7 +6080,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

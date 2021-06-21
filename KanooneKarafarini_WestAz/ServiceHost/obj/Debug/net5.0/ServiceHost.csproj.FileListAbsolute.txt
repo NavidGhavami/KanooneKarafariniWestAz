@@ -43,7 +43,6 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\ImageGalleryManagement.Application.Contract.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\0_Framework.pdb
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\ImageGalleryManagement.Application.Contract.pdb
-E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\ServiceHost.csprojAssemblyReference.cache
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\ServiceHost.GeneratedMSBuildEditorConfig.editorconfig
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfoInputs.cache
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfo.cs
@@ -98,3 +97,8 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\ImageGalleryManagement.Application.pdb
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\ImageGalleryManagement.Domain.pdb
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\ImageGalleryManagement.EFCore.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\01_Query.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\01_Query.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.AssemblyReference.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slider\Default.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\PictureGallery.cshtml.g.cs

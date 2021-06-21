@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ShopManagement.Infrastructure.EFCore.Mapping
+namespace ImageGalleryManagement.Infrastructure.EFCore.Mapping
 {
-    public class SliderMapping:IEntityTypeConfiguration<Slider>
+    public class SliderMapping : IEntityTypeConfiguration<Slider>
     {
         public void Configure(EntityTypeBuilder<Slider> builder)
         {

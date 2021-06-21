@@ -1,9 +1,9 @@
 ﻿using ImageGalleryManagement.Domain.PictureGallery;
 using ImageGalleryManagement.Domain.Slider;
+using ImageGalleryManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Infrastructure.EFCore.Mapping;
 
-namespace ShopManagement.Infrastructure.EFCore
+namespace ImageGalleryManagement.Infrastructure.EFCore
 {
     public class ImageGalleryContext : DbContext
     {

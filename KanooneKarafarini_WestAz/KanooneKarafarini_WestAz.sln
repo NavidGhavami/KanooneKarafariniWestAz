@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageGalleryManagement.Conf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageGalleryManagement.EFCore", "ImageGalleryManagement.EFCore\ImageGalleryManagement.EFCore.csproj", "{760B12AC-DFCB-4A58-8A24-21E10AB683D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{3F4E506B-A49A-43EA-A648-D8098E3BB7AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{3F4E506B-A49A-43EA-A648-D8098E3BB7AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Query", "01_Query\01_Query.csproj", "{849AB1D5-EFBE-4A07-9170-F77D901C3CA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{3F4E506B-A49A-43EA-A648-D8098E3BB7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4E506B-A49A-43EA-A648-D8098E3BB7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4E506B-A49A-43EA-A648-D8098E3BB7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{849AB1D5-EFBE-4A07-9170-F77D901C3CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849AB1D5-EFBE-4A07-9170-F77D901C3CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849AB1D5-EFBE-4A07-9170-F77D901C3CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849AB1D5-EFBE-4A07-9170-F77D901C3CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

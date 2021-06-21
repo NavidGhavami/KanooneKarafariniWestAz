@@ -1,0 +1,16 @@
+﻿@model List<_01_Query.Contract.Slider.SliderQueryModel>
+
+
+<div class="col-lg-9 mb-lg-0 mb-3 order-lg-2  order-1">
+    <div id="owl-slider" class="owl-carousel">
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                <a href="@item.UrlLink">
+                    <img src="~/Pictures/@item.Picture" alt="@item.PictureAlt" title="@item.PictureTitle" class="img-fluid" />
+                    <div class="caption"><p>@item.Title</p></div>
+                </a>
+            </div>
+        }
+    </div>
+</div>

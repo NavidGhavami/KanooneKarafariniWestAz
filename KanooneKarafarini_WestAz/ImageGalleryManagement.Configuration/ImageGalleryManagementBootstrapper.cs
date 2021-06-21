@@ -1,13 +1,16 @@
-﻿using ImageGalleryManagement.Application;
+﻿using _01_Query.Contract.PictureGallery;
+using _01_Query.Contract.Slider;
+using _01_Query.Query;
+using ImageGalleryManagement.Application;
 using ImageGalleryManagement.Application.Contract.PictureGallery;
 using ImageGalleryManagement.Application.Contract.Slider;
 using ImageGalleryManagement.Domain.PictureGallery;
 using ImageGalleryManagement.Domain.Slider;
 using ImageGalleryManagement.EFCore.Repository;
+using ImageGalleryManagement.Infrastructure.EFCore;
 using ImageGalleryManagement.Infrastructure.EFCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ShopManagement.Infrastructure.EFCore;
 
 namespace ImageGalleryManagement.Configuration
 {
@@ -20,6 +23,13 @@ namespace ImageGalleryManagement.Configuration
 
             services.AddTransient<IPictureGalleryRepository, PictureGalleryRepository>();
             services.AddTransient<IPictureGalleryApplication, PictureGalleryApplication>();
+
+
+
+
+
+            services.AddTransient<ISliderQuery, SliderQuery>();
+            services.AddTransient<IPictureGalleryQuery, PictureGalleryQuery>();
 
 
 

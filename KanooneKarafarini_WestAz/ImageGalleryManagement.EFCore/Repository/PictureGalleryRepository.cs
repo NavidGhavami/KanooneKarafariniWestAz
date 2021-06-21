@@ -2,7 +2,7 @@
 using _0_Framework.Infrastructure;
 using ImageGalleryManagement.Application.Contract.PictureGallery;
 using ImageGalleryManagement.Domain.PictureGallery;
-using ShopManagement.Infrastructure.EFCore;
+using ImageGalleryManagement.Infrastructure.EFCore;
 using System.Collections.Generic;
 using System.Linq;
 
