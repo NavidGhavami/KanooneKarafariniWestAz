@@ -1,4 +1,5 @@
-﻿using ImageGalleryManagement.Domain.PictureGallery;
+﻿using ImageGalleryManagement.Domain.Managers;
+using ImageGalleryManagement.Domain.PictureGallery;
 using ImageGalleryManagement.Domain.Slider;
 using ImageGalleryManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ namespace ImageGalleryManagement.Infrastructure.EFCore
     {
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<PictureGallery> PictureGalleries { get; set; }
+        public DbSet<Managers> Managers { get; set; }
 
 
 

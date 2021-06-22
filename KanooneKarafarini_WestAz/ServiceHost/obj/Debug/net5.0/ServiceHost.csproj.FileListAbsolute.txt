@@ -102,3 +102,10 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.AssemblyReference.cache
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slider\Default.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\PictureGallery.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\Humanizer.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\ImageGallery\Managers\Create.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\ImageGallery\Managers\Edit.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\ImageGallery\Managers\Index.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\Managers.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs

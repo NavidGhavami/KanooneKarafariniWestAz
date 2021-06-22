@@ -1,0 +1,39 @@
+﻿@page
+@model ServiceHost.Pages.ManagersModel
+@{
+    ViewData["Title"] = "اعضای هیئت امنا";
+}
+
+<div class="container p-md-5 box p-4">
+    <h4 class="mb-4 bt-color IRANSansWeb_Medium">اعضای انتخابی هیات امنای کانون کارآفرینی </h4>
+    <p>
+        کانون کارآفرینی رسالت اصلی خود را در شناسایی و رتبه بندی کارآفرینان تعریف نموده است.
+    </p>
+    <p>
+        کارآفرینان کانون، همان اندازه که نگران کسب و کار خود هستند، به کارآفرینی در استان آذربایجان غربی نیز می اندیشند.
+    </p>
+    <p>
+        با تجربه ترین صاحبان کسب‌وکار و کارآفرینان استان آذربایجان غربی گرد هم آمده اند و در تلاشند از کارآفرینان استان حمایت کنند و رونق کسب و کار آنان را تبدیل به واقعیت کنند.
+    </p>
+
+    <div class="row">
+        @foreach (var item in Model.Manager)
+        {
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="~/Pictures/@item.Picture" alt="@item.PictureAlt" title="@item.PictureTitle">
+                    <div class="data">
+                        <h6 class="IRANSansWeb_Medium">@item.Fullname</h6>
+                        <span>@item.JobPosition</span>
+                        <br />
+                        <span>نهاد: @item.OrganizationType</span>
+                        <hr>
+                        <p class="text-center">راه های ارتباطی با @item.JobPosition</p>
+                        <p class="text-center">@item.Email</p>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

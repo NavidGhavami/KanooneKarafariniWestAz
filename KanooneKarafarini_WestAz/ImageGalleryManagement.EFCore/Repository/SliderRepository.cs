@@ -4,8 +4,9 @@ using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using ImageGalleryManagement.Application.Contract.Slider;
 using ImageGalleryManagement.Domain.Slider;
+using ImageGalleryManagement.Infrastructure.EFCore;
 
-namespace ImageGalleryManagement.Infrastructure.EFCore.Repository
+namespace ImageGalleryManagement.EFCore.Repository
 {
     public class SliderRepository : RepositoryBase<long, Slider>, ISliderRepository
     {

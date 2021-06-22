@@ -1,0 +1,89 @@
+﻿@model ImageGalleryManagement.Application.Contract.Managers.EditManagers
+
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="Fullname" class="control-label">نام و نام خانوادگی</label>
+                    <input type="text" class="form-control" asp-for="Fullname">
+                    <span asp-validation-for="Fullname" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="JobPosition" class="control-label">سمت شغلی</label>
+                    <input type="text" class="form-control" asp-for="JobPosition">
+                    <span asp-validation-for="JobPosition" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="OrganizationType" class="control-label">نهاد</label>
+                    <input type="text" class="form-control" placeholder="دولتی / غیر دولتی" asp-for="OrganizationType">
+                    <span asp-validation-for="OrganizationType" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Picture" class="control-label">عکس اعضا هیئت امنا</label>
+                    <input type="file" class="form-control" asp-for="Picture">
+                    <span asp-validation-for="Picture" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="PictureAlt" class="control-label">Alt</label>
+                    <input type="text" class="form-control" asp-for="PictureAlt">
+                    <span asp-validation-for="PictureAlt" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="PictureTitle" class="control-label">عنوان عکس</label>
+                    <input type="text" class="form-control" asp-for="PictureTitle">
+                    <span asp-validation-for="PictureTitle" class="error"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">ایمیل</label>
+                    <input type="email" class="form-control" asp-for="Email">
+                    <span asp-validation-for="Email" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="Phone" class="control-label">تلفن ثابت</label>
+                    <input type="text" class="form-control" asp-for="Phone">
+                    <span asp-validation-for="Phone" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="Mobile" class="control-label">موبایل</label>
+                    <input type="text" class="form-control" asp-for="Mobile">
+                    <span asp-validation-for="Mobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input asp-for="Id" type="hidden" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-warning waves-effect waves-light">ویرایش عضو</button>
+    </div>
+</form>

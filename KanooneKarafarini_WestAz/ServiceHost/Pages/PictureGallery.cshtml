@@ -5,11 +5,11 @@
 }
 
 <div class="container box p-5 mt-3">
-    <h5 class="bt-color">گالری تصاویر</h5>
+    <h4 class="mb-4 bt-color IRANSansWeb_Medium">گالری تصاویر</h4>
     <div class="row px-md-5">
         @foreach (var item in Model.PictureGallery)
         {
-            <div class="col-lg-3 col-md-4 col-6" data-toggle="modal" data-target="#modal">
+            <div class="col-lg-4 col-md-4 col-6" data-toggle="modal" data-target="#modal">
                 <a href="#lightbox" data-slide-to="0">
                     <img src="~/Pictures/@item.Picture" alt="@item.PictureAlt" title="@item.PictureTitle"
                          class="my-3 img-fluid rad12">
