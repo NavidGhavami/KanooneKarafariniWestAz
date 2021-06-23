@@ -7,6 +7,7 @@
         public string Picture { get; set; }
         public string JobPosition { get; set; }
         public string OrganizationType { get; set; }
+        public string Mobile { get; set; }
         public bool IsRemoved { get; set; }
         public string CreationDate { get; set; }
     }

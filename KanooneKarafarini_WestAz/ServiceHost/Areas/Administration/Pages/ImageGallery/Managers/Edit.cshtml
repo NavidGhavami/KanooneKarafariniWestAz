@@ -26,7 +26,11 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label asp-for="OrganizationType" class="control-label">نهاد</label>
-                    <input type="text" class="form-control" placeholder="دولتی / غیر دولتی" asp-for="OrganizationType">
+                    <select class="form-control" asp-for="OrganizationType">
+                        <option value="دولتی">دولتی</option>
+                        <option value="غیر دولتی">غیر دولتی</option>
+                    </select>
+                    @*<input type="text" class="form-control" placeholder="دولتی / غیر دولتی" asp-for="OrganizationType">*@
                     <span asp-validation-for="OrganizationType" class="error"></span>
                 </div>
             </div>

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using ServiceHost.Services;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using BlogManagement.Configuration;
 
 namespace ServiceHost
 {
@@ -28,6 +29,7 @@ namespace ServiceHost
 
 
             ImageGalleryManagementBootstrapper.Configure(services, connectionString);
+            BlogManagementBootstrapper.Configure(services, connectionString);
 
 
 

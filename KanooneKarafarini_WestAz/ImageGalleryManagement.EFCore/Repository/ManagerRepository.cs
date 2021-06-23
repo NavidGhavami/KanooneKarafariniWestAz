@@ -42,6 +42,7 @@ namespace ImageGalleryManagement.EFCore.Repository
                 Picture = x.Picture,
                 JobPosition = x.JobPosition,
                 OrganizationType = x.OrganizationType,
+                Mobile = x.Mobile,
                 IsRemoved = x.IsRemoved,
                 CreationDate = x.CreationDate.ToFarsi()
 
