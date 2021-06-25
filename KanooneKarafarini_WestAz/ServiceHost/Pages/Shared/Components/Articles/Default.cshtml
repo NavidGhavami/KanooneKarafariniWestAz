@@ -1,0 +1,24 @@
+﻿@model List<_01_Query.Contract.Article.ArticleQueryModel>
+
+
+<section class="container text-center mt-5">
+    <h5 class="IRANSansWeb_Medium text-center bt-color">آخرین اخبـارها و رویدادها</h5>
+    <p> اخبار و رویداد های کانون کارآفرینی استان آذربایجان غربی را دنبال نمایید</p>
+    <div id="owl-topnews" class="owl-carousel">
+        @foreach (var item in Model)
+        {
+            <div class="card p-3">
+                <a asp-page="/NewsDetails" asp-route-id="@item.Slug" class="relative">
+                    <img src="~/Pictures/@item.Picture" alt="@item.PictureAlt" title="@item.PictureTitle" class="mb-3 img-fluid rad12" />
+                    <div class="covernews d-flex flex-row justify-content-between px-3 text-white IRANSansWeb_Medium ">
+                        <span class="bottom_p"><i class="fas fa-clock ml-1"></i>@item.PublishDate</span>
+                        <span><i class="fas fa-user ml-1"></i>توسط : مدیر سایت</span>
+                    </div>
+                </a>
+                <p>@item.ShortDescription</p>
+                <a asp-page="/NewsDetails" asp-route-id="@item.Slug" class="text-danger IRANSansWeb_Medium text-center pb-3">مشاهده کامل خبر »</a>
+            </div>
+        }
+    </div>
+
+</section>

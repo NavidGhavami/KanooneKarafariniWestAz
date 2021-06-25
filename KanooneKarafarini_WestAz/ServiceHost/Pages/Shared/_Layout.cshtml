@@ -109,58 +109,14 @@
                     </ul>
                 </div>
                 <div class="sina-nav-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
+                    <button type="button" class="navbar-toggle" style="background-color: darkcyan; width: 5px; height: 5px" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars text-center text-white"></i>
                     </button>
                     <a class="sina-brand pl-4 d-lg-none d-block" asp-page="/Index">
                         <img src="~/Theme/assets/Images/logo.png" class="img-fluid" />
                     </a>
                 </div>
-
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="sina-menu sina-menu-center">
-                        <li><a asp-page="Index">صفحه اصلی</a></li>
-                        <li><a href="Blog.html">اخبار و رویدادها</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">برگه ها<i class="fa  fa-arrow-down pr-2"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Blogdetails.html">جزئیات اخبار</a></li>
-                                <li><a href="Component.html">المان ها</a></li>
-                                <li><a href="Features.html">ویژگی ها</a></li>
-                                <li><a href="Guide.html">راهنمای استفاده</a></li>
-                                <li><a href="Price.html">جدول تعرفه</a></li>
-                                <li><a href="404.html">صفحه 404</a></li>
-
-                            </ul>
-                        </li>
-
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">سایر برگه ها<i class="fa  fa-chevron-down pr-2"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Service.html">خدمات</a></li>
-                                <li><a href="Success.html">ثبت موفق</a></li>
-                                <li><a href="UnSuccess.html">ثبت ناموفق</a></li>
-                                <li><a href="Waiting.html">صفحه انتظار</a></li>
-                                <li><a href="Blank.html">صفحه خالی</a></li>
-
-                                <!--<li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-chevron-left float-left"></i>زیر منو</a>
-                                    <ul class="dropdown-menu drop">
-                                        <li><a href="#">زیر منو 1</a></li>
-                                        <li><a href="#">زیر منو 2</a></li>
-                                        <li><a href="#">زیر منو 3</a></li>
-                                    </ul>
-                                </li>-->
-                            </ul>
-                        </li>
-                        <li><a asp-page="/Managers">اعضای هیئت امنا</a></li>
-                        <li><a asp-page="/PictureGallery">گالری تصاویر</a></li>
-                        <li><a href="AboutUs.html">درباره ما</a></li>
-                        <li><a href="ContactUs.html">ارتباط با ما</a></li>
-                    </ul>
-
-                </div>
+                @await Component.InvokeAsync("Menu")
             </div>
         </nav>
     </header>

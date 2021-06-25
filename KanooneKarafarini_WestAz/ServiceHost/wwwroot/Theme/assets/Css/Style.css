@@ -1615,9 +1615,10 @@ footer .form-control {
     .sina-nav .extension-nav {
         margin: 20px 20px 0 0 !important;
     }
-    /*.sina-nav .navbar-toggle {
-        padding: 15px 10px!important;
-    }*/
+    .sina-nav .navbar-toggle {
+        padding: 15px 10px !important;
+        color: #000000 !important;
+    }
 }
 
 

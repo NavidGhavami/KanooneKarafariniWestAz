@@ -38,7 +38,7 @@ namespace _01_LampshadeQuery.Query
                     PublishDate = x.PublishDate.ToFarsi(),
 
 
-                }).OrderByDescending(x => x.Id).Take(9).ToList();
+                }).OrderByDescending(x => x.Id).Take(10).ToList();
         }
 
         public ArticleQueryModel GetArticleDetails(string slug)

@@ -1,0 +1,112 @@
+﻿@page "{id}"
+@model ServiceHost.Pages.NewsCategoryModel
+
+@{
+    ViewData["Title"] = "گروه خبری";
+}
+
+<section class="container mt-3 grad-bg px-md-2 pt-3 pb-4 rad25 brlb">
+    <h5 class="IRANSansWeb_Medium text-center bt-color text-white pb-3">محبوب ترین خبرها</h5>
+
+    <div id="owl-secondevent" class="owl-carousel owl-theme text-right ">
+        @foreach (var item in Model.LatestArticle)
+        {
+            <div class="mx-2">
+                <a asp-page="/NewsDetails" asp-route-id="@item.Slug">
+                    <img src="~/Pictures/@item.Picture" alt="@item.PictureAlt" title="@item.PictureTitle" class="img-fluid rad25 bigpic " />
+                    <div class="blogdiv">
+                        <h6 class="IRANSansWeb_Medium text-white text-shadow">مشاهده کامل خبر</h6>
+                    </div>
+
+                </a>
+
+            </div>
+        }
+       
+    </div>
+
+</section>
+<div class="mx-auto text-center">
+    <img src="~/Theme/assets/Images/foot.png">
+</div>
+<section class="container mt-5">
+    <div id="category" class="row">
+        <div class="col-md-3">
+            <div class="mb-2 box p-3">
+                <h6 class="IRANSansWeb_Medium bt-color  bg-light py-2 px-3 mb-3 rad25">پربازدید ترین خبرها</h6>
+                <ul class="prof">
+
+                    @foreach (var item in Model.LatestArticle)
+                    {
+                        <li>
+                            <a asp-page="/NewsDetails" asp-route-id="@item.Slug">
+                                <span class="md md-folder text-info ml-1"></span>
+                                *** @item.Title
+                            </a>
+                        </li>
+                    }
+
+                </ul>
+
+            </div>
+            <div class="my-2 box p-3">
+                <h6 class="IRANSansWeb_Medium bt-color  bg-light py-2 px-3 rad25">دسته بندی خبر ها</h6>
+                <ul class="prof">
+                    @foreach (var item in Model.ArticleCategories)
+                    {
+                        <li>
+                            <a asp-page="/NewsCategory" asp-route-id="@item.Slug">
+                                <i class="far fa-folder ml-1 text-info"></i>
+                                >> @item.Name - (@item.ArticlesCount)
+                            </a>
+                        </li>
+                    }
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="article" class="col-md-9">
+            <div class="row">
+
+                @foreach (var item in Model.ArticleCategory.Articles)
+                {
+                    <div class="col-md-4">
+                        <div class="card p-3">
+                            <a asp-page="/NewsDetails" asp-route-id="@item.Slug" class="relative">
+                                <img src="~/Pictures/@item.Picture" alt="@item.PictureAlt" title="@item.Title" class="mb-3 img-fluid rad12">
+                                <div class="d-flex flex-column covernews ">
+                                    <div class="d-flex flex-row justify-content-between px-3 text-white IRANSansWeb_Medium ">
+                                        <span class="bottom_p">
+                                            <i class="fas fa-clock ml-1"></i> تاریخ انتشار خبر: @item.PublishDate
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <p>
+                                @item.ShortDescription
+                            </p>
+                            <a asp-page="/NewsDetails" asp-route-id="@item.Slug" class="text-danger IRANSansWeb_Medium text-center mb-3">مشاهده کامل خبر »</a>
+                        </div>
+
+                    </div>
+                }
+
+            </div>
+            
+            <hr />
+            <ul class="pagination  justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">«</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item "><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">»</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</section>

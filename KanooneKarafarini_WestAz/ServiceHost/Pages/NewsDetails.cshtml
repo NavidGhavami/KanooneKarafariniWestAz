@@ -1,0 +1,46 @@
+﻿@page "{id}"
+@model ServiceHost.Pages.NewsDetailsModel
+
+
+@{
+    ViewData["Title"] = "جزئیات خبر";
+}
+
+<section class="container-fluid mt-3 pb-4 pb-lg-0">
+    <div class="container p-5 box">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb mb-0 rad25">
+                        <li class="breadcrumb-item"><a asp-page="/Index">صفحه اصلی</a></li>
+                        <li class="breadcrumb-item"><a asp-page="/NewsCategory" asp-route-id="@Model.Article.CategorySlug">گروه خبری</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@Model.Article.Title</li>
+                    </ol>
+                </nav>
+                <div id="blog_details">
+                    <h5 class="pt-3 IRANSansWeb_Medium">@Model.Article.Title</h5>
+                    <p>
+                        <i class="md md-history pl-1"></i> نویسنده : مدیر سایت<br />
+                        <i class="md md-history pl-1"></i> تاریخ انتشار خبر : @Model.Article.PublishDate 
+                    </p>
+                    <img src="~/Pictures/@Model.Article.Picture" alt="@Model.Article.PictureAlt" title="@Model.Article.PictureTitle" class="img-fluid rad25 pb-3 w-75">
+
+                    <p>
+                        @Html.Raw(Model.Article.Description)
+                    </p>
+
+                    <h6>کلمات کلیدی :</h6>
+                    <ul class="inline">
+                        @foreach (var key in Model.Article.KeywordList)
+                        {
+                            <li class="mb-2">
+                                <a href="#" class="key-word">@key</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
