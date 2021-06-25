@@ -79,6 +79,47 @@ namespace ImageGalleryManagement.EFCore.Migrations
                     b.ToTable("Managers");
                 });
 
+            modelBuilder.Entity("ImageGalleryManagement.Domain.Partners.Partners", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(550)
+                        .HasColumnType("nvarchar(550)");
+
+                    b.Property<string>("Picture")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("PictureAlt")
+                        .IsRequired()
+                        .HasMaxLength(550)
+                        .HasColumnType("nvarchar(550)");
+
+                    b.Property<string>("PictureTitle")
+                        .IsRequired()
+                        .HasMaxLength(550)
+                        .HasColumnType("nvarchar(550)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Partners");
+                });
+
             modelBuilder.Entity("ImageGalleryManagement.Domain.PictureGallery.PictureGallery", b =>
                 {
                     b.Property<long>("Id")
