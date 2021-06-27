@@ -141,3 +141,6 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\CommonSection\Footer\Index.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\CommonSection\Footer\Create.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\CommonSection\Footer\Edit.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\CommonSection\AboutContactUs\Index.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\CommonSection\AboutContactUs\Create.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\CommonSection\AboutContactUs\Edit.cshtml.g.cs

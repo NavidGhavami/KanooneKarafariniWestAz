@@ -1,4 +1,5 @@
-﻿using CommonSectionManagement.Domain.Footer;
+﻿using CommonSectionManagement.Domain.AboutContactUs;
+using CommonSectionManagement.Domain.Footer;
 using CommonSectionManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,7 +8,8 @@ namespace CommonSectionManagement.Infrastructure.EFCore
     public class CommonSectionContext : DbContext
     {
         public DbSet<Footer> Footers { get; set; }
-        
+        public DbSet<AboutContactUs> AboutContactUs { get; set; }
+
 
 
 

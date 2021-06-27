@@ -1,0 +1,107 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.CommonSection.AboutContactUs.EditModel
+
+
+@{
+    Layout = "Shared/_AdminLayout";
+    ViewData["Title"] = "ویرایش درباره و تماس با ما";
+}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">ویرایش درباره و تماس با ما</h3>
+                </div>
+                <div class="panel-body">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Command.Address" class="control-label">آدرس</label>
+                                    <textarea class="form-control autogrow" asp-for="Command.Address"
+                                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                    <span asp-validation-for="Command.Address" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Command.Phone" class="control-label">تلفن</label>
+                                    <input type="text" class="form-control" asp-for="Command.Phone">
+                                    <span asp-validation-for="Command.Phone" class="error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Command.Mobile" class="control-label">موبایل</label>
+                                    <input type="text" class="form-control" asp-for="Command.Mobile">
+                                    <span asp-validation-for="Command.Mobile" class="error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Command.Fax" class="control-label">فاکس</label>
+                                    <input type="text" class="form-control" asp-for="Command.Fax">
+                                    <span asp-validation-for="Command.Fax" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Command.Email" class="control-label">ایمیل</label>
+                                    <input type="email" class="form-control" asp-for="Command.Email">
+                                    <span asp-validation-for="Command.Email" class="error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Command.GoogleMap" class="control-label">آدرس گوگل مپ</label>
+                                    <input type="text" class="form-control" asp-for="Command.GoogleMap">
+                                    <span asp-validation-for="Command.GoogleMap" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group no-margin">
+                                    <label asp-for="Command.ContactUsText" class="control-label">متن تماس ما</label>
+                                    <textarea class="form-control" asp-for="Command.ContactUsText"></textarea>
+                                    <span asp-validation-for="Command.ContactUsText" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group no-margin">
+                                    <label asp-for="Command.AboutUsText" class="control-label">متن درباره ما</label>
+                                    <textarea id="BodyContent" class="form-control" asp-for="Command.AboutUsText"></textarea>
+                                    <span asp-validation-for="Command.AboutUsText" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" class="form-control" asp-for="Command.Id" />
+                        <button class="btn btn-warning" type="submit">ویرایش اطلاعات</button>
+                        <a class="btn btn-default" asp-page="./Index"> بازگشت</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/AdminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/AdminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#datatable').dataTable();
+        });
+    </script>
+
+}
