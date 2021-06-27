@@ -1,0 +1,17 @@
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\CommonSectionManagement.Domain.deps.json
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\CommonSectionManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\ref\CommonSectionManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\CommonSectionManagement.Domain.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\CommonSectionManagement.Application.Contract.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\bin\Debug\net5.0\CommonSectionManagement.Application.Contract.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.csproj.AssemblyReference.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.AssemblyInfoInputs.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.AssemblyInfo.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.csproj.CoreCompileInputs.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.csproj.CopyComplete
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\ref\CommonSectionManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Domain\obj\Debug\net5.0\CommonSectionManagement.Domain.pdb

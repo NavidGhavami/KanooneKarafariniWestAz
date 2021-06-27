@@ -34,6 +34,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "BlogManagement.Configuration": "1.0.0",
+          "CommonSectionManagement.Configuration": "1.0.0",
           "ImageGalleryManagement.Application.Contract": "1.0.0",
           "ImageGalleryManagement.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.7",
@@ -1434,6 +1435,68 @@
         },
         "compile": {
           "BlogManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "CommonSectionManagement.Application/1.0.0": {
+        "dependencies": {
+          "CommonSectionManagement.Application.Contract": "1.0.0",
+          "CommonSectionManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CommonSectionManagement.Application.dll": {}
+        },
+        "compile": {
+          "CommonSectionManagement.Application.dll": {}
+        }
+      },
+      "CommonSectionManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "CommonSectionManagement.Application.Contract.dll": {}
+        },
+        "compile": {
+          "CommonSectionManagement.Application.Contract.dll": {}
+        }
+      },
+      "CommonSectionManagement.Configuration/1.0.0": {
+        "dependencies": {
+          "CommonSectionManagement.Application": "1.0.0",
+          "CommonSectionManagement.Domain": "1.0.0",
+          "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "CommonSectionManagement.Configuration.dll": {}
+        },
+        "compile": {
+          "CommonSectionManagement.Configuration.dll": {}
+        }
+      },
+      "CommonSectionManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommonSectionManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "CommonSectionManagement.Domain.dll": {}
+        },
+        "compile": {
+          "CommonSectionManagement.Domain.dll": {}
+        }
+      },
+      "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "CommonSectionManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "runtime": {
+          "CommonSectionManagement.Infrastructure.EFCore.dll": {}
+        },
+        "compile": {
+          "CommonSectionManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ImageGalleryManagement.Application/1.0.0": {
@@ -3944,6 +4007,31 @@
       "sha512": ""
     },
     "BlogManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

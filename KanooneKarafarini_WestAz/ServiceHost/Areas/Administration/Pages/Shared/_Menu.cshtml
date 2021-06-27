@@ -31,7 +31,7 @@
                 </li>
 
                 @*@if (AuthHelper.CurrentAccountRole() == Roles.Administrator)
-                    {*@
+        {*@
 
                 <li>
                     <a asp-page="/ImageGallery/Partners/Index" class="waves-effect"><i class="md md-verified-user"></i><span>مدیریت همکاران</span></a>
@@ -49,6 +49,14 @@
                     <ul class="list-unstyled">
                         <li><a asp-page="/Blog/ArticleCategory/Index">گروه خبری</a></li>
                         <li><a asp-page="/Blog/Article/Index">اخبار</a></li>
+                    </ul>
+                </li>
+                <li class="has_sub">
+                    <a class="waves-effect"><i class="md md-pages"></i><span> مدیریت صفحات مشترک </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <ul class="list-unstyled">
+                        <li><a asp-page="/CommonSection/Footer/Index">فوتر</a></li>
+                        <li><a asp-page="/CommonSection/AboutUs/Index">درباره ما</a></li>
+                        <li><a asp-page="/CommonSection/ContactUs/Index">ارتباط با ما</a></li>
                     </ul>
                 </li>
                 <li>

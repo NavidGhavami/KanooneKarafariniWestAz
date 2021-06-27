@@ -27,9 +27,7 @@ public class PartnerQuery : IPartnerQuery
                     PictureTitle = x.PictureTitle,
                     
 
-                })
-                .Take(50)
-                .ToList();
+                }).ToList();
         }
     }
 }

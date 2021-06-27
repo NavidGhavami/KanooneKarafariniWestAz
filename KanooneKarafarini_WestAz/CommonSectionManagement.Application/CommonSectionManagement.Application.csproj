@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonSectionManagement.Application.Contract\CommonSectionManagement.Application.Contract.csproj" />
+    <ProjectReference Include="..\CommonSectionManagement.Domain\CommonSectionManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
