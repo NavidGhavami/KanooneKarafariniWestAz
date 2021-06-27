@@ -1594,6 +1594,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
           "ImageGalleryManagement.EFCore": "1.0.0"
         },
         "compile": {
@@ -1723,6 +1724,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "01_Query": "1.0.0",
           "CommonSectionManagement.Application": "1.0.0",
           "CommonSectionManagement.Domain": "1.0.0",
           "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",

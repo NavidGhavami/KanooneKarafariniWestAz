@@ -9,6 +9,7 @@
       "01_Query/1.0.0": {
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
           "ImageGalleryManagement.EFCore": "1.0.0"
         },
         "runtime": {
@@ -1137,6 +1138,33 @@
           "BlogManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "CommonSectionManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "CommonSectionManagement.Application.Contract.dll": {}
+        }
+      },
+      "CommonSectionManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommonSectionManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "CommonSectionManagement.Domain.dll": {}
+        }
+      },
+      "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "CommonSectionManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "runtime": {
+          "CommonSectionManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "ImageGalleryManagement.Application.Contract/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0"
@@ -1895,6 +1923,21 @@
       "sha512": ""
     },
     "BlogManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

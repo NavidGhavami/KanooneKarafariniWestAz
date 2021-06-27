@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\01_Query\01_Query.csproj" />
     <ProjectReference Include="..\CommonSectionManagement.Application\CommonSectionManagement.Application.csproj" />
     <ProjectReference Include="..\CommonSectionManagement.Domain\CommonSectionManagement.Domain.csproj" />
     <ProjectReference Include="..\CommonSectionManagement.Infrastructure.EFCore\CommonSectionManagement.Infrastructure.EFCore.csproj" />

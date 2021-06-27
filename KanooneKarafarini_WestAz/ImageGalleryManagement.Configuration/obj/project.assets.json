@@ -1568,6 +1568,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
           "ImageGalleryManagement.EFCore": "1.0.0"
         },
         "compile": {
@@ -1632,6 +1633,48 @@
         },
         "runtime": {
           "bin/placeholder/BlogManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "CommonSectionManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommonSectionManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonSectionManagement.Application.Contract.dll": {}
+        }
+      },
+      "CommonSectionManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommonSectionManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommonSectionManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonSectionManagement.Domain.dll": {}
+        }
+      },
+      "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CommonSectionManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "compile": {
+          "bin/placeholder/CommonSectionManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonSectionManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ImageGalleryManagement.Application/1.0.0": {
@@ -6039,6 +6082,21 @@
       "type": "project",
       "path": "../BlogManagement.Infrastructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../BlogManagement.Infrastructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj"
+    },
+    "CommonSectionManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../CommonSectionManagement.Application.Contract/CommonSectionManagement.Application.Contract.csproj",
+      "msbuildProject": "../CommonSectionManagement.Application.Contract/CommonSectionManagement.Application.Contract.csproj"
+    },
+    "CommonSectionManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CommonSectionManagement.Domain/CommonSectionManagement.Domain.csproj",
+      "msbuildProject": "../CommonSectionManagement.Domain/CommonSectionManagement.Domain.csproj"
+    },
+    "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../CommonSectionManagement.Infrastructure.EFCore/CommonSectionManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../CommonSectionManagement.Infrastructure.EFCore/CommonSectionManagement.Infrastructure.EFCore.csproj"
     },
     "ImageGalleryManagement.Application/1.0.0": {
       "type": "project",

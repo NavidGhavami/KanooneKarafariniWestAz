@@ -1,14 +1,18 @@
-﻿
+﻿@model List<_01_Query.Contract.Footer.FooterQueryModel>
 <footer class="rel-footer mt-5">
     <div id="footer-content">
         <div class="container">
             <div class="row pt-4 mx-2">
                 <div class="col-lg-5 col-sm-6 pr-lg-4 py-3 IRANSansWeb_Medium  order-lg-3  order-2">
                     <h5 class="IRANSansWeb_Medium"> ارتباط با ما : </h5>
-                    <p><i class="fas fa-2x fa-map-marker-alt ml-2"></i>آدرس : شهرستان گنبدکاووس - خیابان آزادگان - میدان فراغی  </p>
-                    <p><i class="fas fa-2x fa-phone ml-2"></i>تلفن : 01733224455</p>
-                    <p><i class="fas fa-2x fa-mobile-alt ml-2"></i>تلفن همراه : 09301234567</p>
-                    <p><i class="fas fa-2x fa-fax ml-2"></i>نمابر : 09301234567</p>
+                    @foreach (var item in Model)
+                    {
+                        <p><i class="fas fa-2x fa-map-marker-alt ml-2"></i>آدرس : @item.Address  </p>
+                        <p><i class="fas fa-2x fa-fax ml-2"></i>ایمیل : @item.Email</p>
+                        <p><i class="fas fa-2x fa-phone ml-2"></i>تلفن : @item.Phone</p>
+                        <p><i class="fas fa-2x fa-mobile-alt ml-2"></i>تلفن همراه : @item.Mobile</p>
+                        <p><i class="fas fa-2x fa-fax ml-2"></i>نمابر : @item.Fax</p>
+                    }
                 </div>
                 <div class="col-lg-2 col-sm-6 py-3 order-lg-1 order-1">
                     <h5 class="IRANSansWeb_Medium"> لینک های سریع : </h5>
@@ -31,9 +35,6 @@
                     <h5 class="IRANSansWeb_Medium">پیوندها : </h5>
                     <ul>
                         <li>
-                            <a asp-page="/Index" target="_blank" title="صفحه اصلی">صفحه اصلی</a>
-                        </li>
-                        <li>
                             <a asp-page="/Account" target="_blank" title="ورود">ورود</a>
                         </li>
                         <li>
@@ -47,8 +48,8 @@
                 <div class="col-lg-3 col-sm-6 col-sm-4 py-3 order-lg-4 order-4">
                     <h5 class="IRANSansWeb_Medium">نشان اعتماد الکترونیکی : </h5>
                     <div class="d-flex flex-column">
-                        <a href="#"><img src="~/Theme/assets/Images/googleplay.png" class="p-2" /></a>
-                        <a href="#"><img src="~/Theme/assets/Images/bazar.png" class="p-2" /></a>
+                        <a href="#"><img src="~/Theme/assets/Images/zarinpal.png" class="p-2" /></a>
+                        
                     </div>
                 </div>
 

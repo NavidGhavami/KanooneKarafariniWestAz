@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogManagement.Infrastructure.EFCore\BlogManagement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\CommonSectionManagement.Infrastructure.EFCore\CommonSectionManagement.Infrastructure.EFCore.csproj" />
     <ProjectReference Include="..\ImageGalleryManagement.EFCore\ImageGalleryManagement.EFCore.csproj" />
   </ItemGroup>
 

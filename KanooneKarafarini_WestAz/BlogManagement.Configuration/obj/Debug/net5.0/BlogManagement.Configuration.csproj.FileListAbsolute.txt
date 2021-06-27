@@ -29,3 +29,9 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\obj\Debug\net5.0\BlogManagement.Configuration.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\obj\Debug\net5.0\ref\BlogManagement.Configuration.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\obj\Debug\net5.0\BlogManagement.Configuration.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\bin\Debug\net5.0\CommonSectionManagement.Application.Contract.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\bin\Debug\net5.0\CommonSectionManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\bin\Debug\net5.0\CommonSectionManagement.Infrastructure.EFCore.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\bin\Debug\net5.0\CommonSectionManagement.Application.Contract.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\bin\Debug\net5.0\CommonSectionManagement.Domain.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\BlogManagement.Configuration\bin\Debug\net5.0\CommonSectionManagement.Infrastructure.EFCore.pdb
