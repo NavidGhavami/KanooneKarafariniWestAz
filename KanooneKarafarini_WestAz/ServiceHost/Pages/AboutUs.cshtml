@@ -1,0 +1,28 @@
+﻿@page
+@model ServiceHost.Pages.AboutUsModel
+
+@{
+    ViewData["Title"] = "درباره ما";
+}
+
+<section class="container-fluid mt-3">
+    <div class="container box">
+        <div class="row p-md-5 p-4">
+            <div class="col-lg-8 text-justify">
+                <h4 class="mb-4 bt-color IRANSansWeb_Medium"> درباره کانون کارآفرینی آذربایجان غربی</h4>
+                @foreach (var item in Model.AboutContactUs)
+                {
+                    <p>
+                        @Html.Raw(item.AboutUsText)
+                    </p>
+                }
+
+            </div>
+            <div class="col-lg-4 pt-4">
+                <img src="~/Theme/assets/Images/AboutUsBanner.png" alt="درباره ما - کانون کارآفرینی آذربایجان غربی"
+                     title="درباره ما - کانون کارآفرینی آذربایجان غربی" class="float-lg-left img-fluid" style="width:300px;height:auto">
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _01_Query.Contract.AboutContactUs;
 using _01_Query.Contract.Footer;
 using _01_Query.Query;
 using CommonSectionManagement.Application;
@@ -29,6 +30,7 @@ namespace CommonSectionManagement.Configuration
 
 
             services.AddTransient<IFooterQuery, FooterQuery>();
+            services.AddTransient<IAboutContactUsQuery, AboutContactUsQuery>();
 
 
 

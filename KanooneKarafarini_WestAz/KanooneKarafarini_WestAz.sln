@@ -53,15 +53,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CM.Domain", "CM.Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CM.Infrastructure", "CM.Infrastructure", "{62BFCF12-6A06-4947-9FC3-EDCB26C979FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSectionManagement.Domain", "CommonSectionManagement.Domain\CommonSectionManagement.Domain.csproj", "{51D26BF7-744D-4533-B3A1-0BF0D6E5B835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonSectionManagement.Domain", "CommonSectionManagement.Domain\CommonSectionManagement.Domain.csproj", "{51D26BF7-744D-4533-B3A1-0BF0D6E5B835}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSectionManagement.Application.Contract", "CommonSectionManagement.Application.Contract\CommonSectionManagement.Application.Contract.csproj", "{57E7EDB3-6AAF-4684-A3E4-1AF17D482454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonSectionManagement.Application.Contract", "CommonSectionManagement.Application.Contract\CommonSectionManagement.Application.Contract.csproj", "{57E7EDB3-6AAF-4684-A3E4-1AF17D482454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSectionManagement.Application", "CommonSectionManagement.Application\CommonSectionManagement.Application.csproj", "{49F69C51-F2BF-4FC1-9E5A-AE0D33859E81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonSectionManagement.Application", "CommonSectionManagement.Application\CommonSectionManagement.Application.csproj", "{49F69C51-F2BF-4FC1-9E5A-AE0D33859E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSectionManagement.Infrastructure.EFCore", "CommonSectionManagement.Infrastructure.EFCore\CommonSectionManagement.Infrastructure.EFCore.csproj", "{B219544B-589A-4B2F-AC7C-1C5EEDE02743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonSectionManagement.Infrastructure.EFCore", "CommonSectionManagement.Infrastructure.EFCore\CommonSectionManagement.Infrastructure.EFCore.csproj", "{B219544B-589A-4B2F-AC7C-1C5EEDE02743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSectionManagement.Configuration", "CommonSectionManagement.Configuration\CommonSectionManagement.Configuration.csproj", "{466E505E-2EDE-4ABE-A84D-1E0DA8D0AAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonSectionManagement.Configuration", "CommonSectionManagement.Configuration\CommonSectionManagement.Configuration.csproj", "{466E505E-2EDE-4ABE-A84D-1E0DA8D0AAA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
