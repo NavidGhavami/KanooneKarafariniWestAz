@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using ServiceHost.Services;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using AccountManagement.Configuration;
 using BlogManagement.Configuration;
 using CommonSectionManagement.Configuration;
 
@@ -32,11 +33,15 @@ namespace ServiceHost
             ImageGalleryManagementBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
             CommonSectionManagementBootstrapper.Configure(services, connectionString);
+            AccountManagementBootstrapper.Configure(services, connectionString);
 
 
 
 
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
+            //services.AddTransient<IAuthHelper, AuthHelper>();
+
 
 
 
