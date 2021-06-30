@@ -25,8 +25,8 @@
     <script src="~/Theme/assets/Js/custom.js"></script>
     <script src="~/Theme/assets/Js/sina-nav.min.js"></script>
 
-    <!--<link href="~/Theme/assets/Css/all.min.css" rel="stylesheet" />
-    <script src="~/Theme/assets/Js/all.min.js"></script>-->
+    @*<link href="~/Theme/assets/Css/all.min.css" rel="stylesheet" />*@
+    @*<script src="~/Theme/assets/Js/all.min.js"></script>*@
     @*<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/Css/all.min.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/Js/all.min.js"></script>*@
 
@@ -40,20 +40,20 @@
 
     <div id="fixed-social">
         <div>
-            <a href="#" class="fixed-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="fixed-linkedin" target="_blank"><i class="fa fa-facebook"></i></a>
         </div>
         <div>
-            <a href="#" class="fixed-instagrem" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="fixed-instagrem" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
 
         <div>
-            <a href="#" class="fixed-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="fixed-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
         </div>
         <div>
-            <a href="#" class="fixed-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="fixed-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
         </div>
         <div>
-            <a href="#" class="fixed-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="fixed-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
         </div>
 
 
@@ -93,29 +93,6 @@
     <header class="nav-container">
         <nav class="sina-nav mobile-sidebar navbar-fixed" data-top="60">
             <div class="container">
-
-                <div class="extension-nav">
-                    <ul class="pt-2">
-                        <li>
-                            <a id="loginbtn" href="Login.html" class="btn btn-link p-1 ml-2">
-                                <img src="~/Theme/assets/Images/Svg/login.svg" /> ورود
-                            </a>
-                        </li>
-                        <li>
-                            <a id="loginbtn" href="Register.html" class="btn btn-link p-1 ml-2">
-                                <img src="~/Theme/assets/Images/Svg/user.svg" />عضویت
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sina-nav-header">
-                    <button type="button" class="navbar-toggle" style="background-color: darkcyan; width: 5px; height: 5px" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars text-center text-white"></i>
-                    </button>
-                    <a class="sina-brand pl-4 d-lg-none d-block" asp-page="/Index">
-                        <img src="~/Theme/assets/Images/logo.png" class="img-fluid" />
-                    </a>
-                </div>
                 @await Component.InvokeAsync("Menu")
             </div>
         </nav>

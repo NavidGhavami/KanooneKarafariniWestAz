@@ -1,0 +1,37 @@
+﻿@page
+@model ServiceHost.Pages.AccountModel
+
+
+@{
+    ViewData["Title"] = "صفحه ورود";
+}
+
+<section class="container-fluid p-5 pb-lg-0">
+
+    <section class="text-center m-3 ">
+        @if (Model.LoginMessage != null)
+        {
+            <div class="alert alert-danger">
+                @Model.LoginMessage
+            </div>
+        }
+        <form method="post" asp-page-handler="Login">
+            <div id="login" class="box shadow text-center border-top-0 p-lg-4 p-3">
+                <img src="~/Theme/assets/Images/Svg/login.svg" style="width: 45px">
+                <h5 class="IRANSansWeb_Bold text-grad pt-3">ورود به سایت </h5>
+
+                <p class="mb-3">لطفا جهت ورود ، نام کاربری و رمز عبور خود را وارد نمایید</p>
+
+                <input class="form-control mb-3" type="text" name="username" placeholder="نام کاربری" required 
+                       oninvalid="this.setCustomValidity('لطفا نام کاربری را وارد کنید')"
+                       oninput="this.setCustomValidity('')">
+
+                <input class="form-control mb-3" type="password" name="password" placeholder="رمز عبور" required 
+                       oninvalid="this.setCustomValidity('لطفا کلمه عبور را وارد کنید')"
+                       oninput="this.setCustomValidity('')">
+
+                <button class="btn btn-grad btn-block text-white mb-3 py-2" type="submit">ورود به سایت <i class="fa fa-chevron-left mr-2"></i> </button>
+            </div>
+        </form>
+    </section>
+</section>

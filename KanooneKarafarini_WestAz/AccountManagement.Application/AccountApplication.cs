@@ -10,16 +10,16 @@ namespace AccountManagement.Application
         private readonly IPasswordHasher _passwordHasher;
         private readonly IAccountRepository _accountRepository;
         private readonly IFileUploader _fileUploader;
-        //private readonly IAuthHelper _authHelper;
+        private readonly IAuthHelper _authHelper;
         //private readonly IRoleRepository _roleRepository;
 
         public AccountApplication(IAccountRepository accountRepository, IPasswordHasher passwordHasher,
-            IFileUploader fileUploader/*, IAuthHelper authHelper*//*, IRoleRepository roleRepository*/)
+            IFileUploader fileUploader, IAuthHelper authHelper/*, IRoleRepository roleRepository*/)
         {
             _accountRepository = accountRepository;
             _passwordHasher = passwordHasher;
             _fileUploader = fileUploader;
-            //_authHelper = authHelper;
+            _authHelper = authHelper;
             //_roleRepository = roleRepository;
         }
 
@@ -36,7 +36,7 @@ namespace AccountManagement.Application
 
             var password = _passwordHasher.Hash(command.Password);
 
-            var account = new Account(command.FullName, command.Username, password, command.Mobile, command.RoleId,  photoName);
+            var account = new Account(command.FullName, command.Username, password, command.Mobile, command.RoleId, photoName);
 
             _accountRepository.Create(account);
             _accountRepository.SaveChanges();
@@ -61,7 +61,7 @@ namespace AccountManagement.Application
             var picturePath = $"ProfilePhotos";
             var photoName = _fileUploader.Upload(command.ProfilePhoto, picturePath);
 
-            account.Edit(command.FullName, command.Username, command.Mobile, command.RoleId,  photoName);
+            account.Edit(command.FullName, command.Username, command.Mobile, command.RoleId, photoName);
 
             _accountRepository.SaveChanges();
 
@@ -106,16 +106,11 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.WrongUserPass);
             }
 
-            //var permissions = _roleRepository
-            //    .Get(account.RoleId)
-            //    .Permissions
-            //    .Select(x => x.Code)
-            //    .ToList();
 
-            //var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname,
-            //    account.Username, account.ProfilePhoto, /*permissions,*/ account.Mobile);
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname,
+                account.Username, account.ProfilePhoto, account.Mobile);
 
-            //_authHelper.SignIn(authViewModel);
+            _authHelper.SignIn(authViewModel);
 
             return operation.Succedded();
         }
@@ -137,7 +132,7 @@ namespace AccountManagement.Application
 
         public void Logout()
         {
-            //_authHelper.SignOut();
+            _authHelper.SignOut();
         }
     }
 }

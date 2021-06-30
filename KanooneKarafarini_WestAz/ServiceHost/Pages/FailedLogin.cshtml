@@ -1,0 +1,31 @@
+﻿@page
+@model ServiceHost.Pages.FailedLoginModel
+
+
+@{
+    ViewData["Title"] = "خطای ورود";
+}
+
+<section class="container-fluid mt-3 error404">
+    <div class="container p-md-5 box p-4">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="alert alert-danger  my-3" role="alert">
+                    <i class="fa fa-times text-danger ml-1"></i>
+                    @if (!Model.Result.IsSuccedded)
+                    {
+                        <span class="IRANSansWeb_Medium">
+                            نام کاربری یا رمز عبور اشتباه است
+                        </span>
+                        <br />
+                        <br />
+                        <span class="IRANSansWeb_Medium">
+                            لطفا دوباره تلاش نمایید
+                        </span>
+                    }
+                </div>
+                <a asp-page="/Account" class="btn btn-grad text-white mt-3">بازگشت به صفحه ورود</a>
+            </div>
+        </div>
+    </div>
+</section>

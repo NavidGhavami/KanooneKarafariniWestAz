@@ -1,6 +1,44 @@
-﻿@model _01_Query.MenuModel
+﻿@using _0_Framework.Application
+@model _01_Query.MenuModel
+@inject IAuthHelper AuthHelper
 
+<div class="extension-nav">
+    <ul class="pt-2">
+        @if (AuthHelper.IsAuthenticated())
+        {
 
+            <li>
+
+                <a id="loginbtn" asp-page="/Account" asp-page-handler="Logout" class="btn btn-link p-1 ml-2">
+                    <img src="~/Theme/assets/Images/Svg/logout.svg" /> خروج
+                </a>
+
+            </li>
+        }
+        else
+        {
+            <li>
+                <a id="loginbtn" asp-page="/Account" class="btn btn-link p-1 ml-2">
+                    <img src="~/Theme/assets/Images/Svg/login.svg" /> ورود
+                </a>
+            </li>
+        }
+
+        @*<li>
+            <a id="loginbtn" asp-page="/Register" class="btn btn-link p-1 ml-2">
+                <img src="~/Theme/assets/Images/Svg/user.svg" />عضویت
+            </a>
+        </li>*@
+    </ul>
+</div>
+<div class="sina-nav-header">
+    <button type="button" class="navbar-toggle" style="background-color: darkcyan; width: 5px; height: 5px" data-toggle="collapse" data-target="#navbar-menu">
+        <i class="fa fa-bars text-center text-white"></i>
+    </button>
+    <a class="sina-brand pl-4 d-lg-none d-block" asp-page="/Index">
+        <img src="~/Theme/assets/Images/logo.png" class="img-fluid" />
+    </a>
+</div>
 
 <div class="collapse navbar-collapse" id="navbar-menu">
     <ul class="sina-menu sina-menu-center">
@@ -17,20 +55,19 @@
             </ul>
         </li>
 
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">سایر برگه ها<i class="fa  fa-chevron-down pr-2"></i></a>
-            <ul class="dropdown-menu">
-                <li><a href="Service.html">خدمات</a></li>
-                <li><a href="Success.html">ثبت موفق</a></li>
-                <li><a href="UnSuccess.html">ثبت ناموفق</a></li>
-                <li><a href="Waiting.html">صفحه انتظار</a></li>
-                <li><a href="Blank.html">صفحه خالی</a></li>
-            </ul>
-        </li>
         <li><a asp-page="/Managers">اعضای هیئت امنا</a></li>
         <li><a asp-page="/PictureGallery">گالری تصاویر</a></li>
         <li><a asp-page="/AboutUs">درباره ما</a></li>
         <li><a asp-page="/ContactUs">ارتباط با ما</a></li>
+
+        @if (AuthHelper.IsAuthenticated())
+        {
+            <li><a asp-page="/Index" asp-area="Administration">مدیریت سایت</a></li>
+            <li><a asp-page="/Index">@AuthHelper.CurrentAccountInfo().FullName عزیز، خوش آمدید!</a></li>
+            
+
+
+        }
     </ul>
 
 </div>
