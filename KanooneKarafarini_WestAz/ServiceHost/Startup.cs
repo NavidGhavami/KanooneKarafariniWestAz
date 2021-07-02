@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using _0_Framework.Application;
 using ImageGalleryManagement.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using ServiceHost.Services;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using _0_Framework.Infrastructure;
 using AccountManagement.Configuration;
 using BlogManagement.Configuration;
 using CommonSectionManagement.Configuration;
@@ -62,12 +64,29 @@ namespace ServiceHost
 
 
 
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminArea",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
 
-            
+                options.AddPolicy("Account",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
 
+                options.AddPolicy("CommonSection",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
 
-            services.AddRazorPages();
+            });
+
+            services.AddRazorPages()
+                .AddRazorPagesOptions(options =>
+                {
+                    options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
+                    options.Conventions.AuthorizeAreaFolder("Administration", "/CommonSection", "CommonSection");
+                    options.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
+
+                });
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

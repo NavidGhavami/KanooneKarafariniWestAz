@@ -1,0 +1,21 @@
+﻿@page
+@model ServiceHost.Pages.AccessDeniedModel
+
+@{
+    ViewData["Title"] = "صفحه مورد نظر یافت نشد";
+}
+
+
+<section class="container-fluid mt-3 error404">
+    <div class="container p-md-5 box p-4">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-4">
+                <img src="~/Theme/assets/Images/404 Error.png" class="img-fluid">
+                <h6 class="IRANSansWeb_Medium">
+                    متاسفیم !! صفحه ای که به دنبال آن هستید یافت نشد ..
+                </h6>
+                <a asp-page="/Index" class="btn btn-grad text-white mt-3">بازگشت به صفحه اصلی</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,6 +1,6 @@
 ﻿@using _0_Framework.Application
 @using _0_Framework.Infrastructure
-@*@inject IAuthHelper AuthHelper*@
+@inject IAuthHelper AuthHelper
 @{
 }
 
@@ -8,11 +8,11 @@
     <div class="sidebar-inner slimscrollleft">
         <div class="user-details">
             <div class="pull-right">
-                <img src="~/Pictures/@*@AuthHelper.CurrentAccountInfo().Picture*@" alt="" class="thumb-md img-circle">
+                <img src="~/Pictures/@AuthHelper.CurrentAccountInfo().Picture" alt="" class="thumb-md img-circle">
             </div>
             <div class="user-info">
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">@*@AuthHelper.CurrentAccountInfo().FullName*@<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">@AuthHelper.CurrentAccountInfo().FullName<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> پروفایل<div class="ripple-wrapper"></div></a></li>
                         <li><a href="javascript:void(0)"><i class="md md-settings"></i> تنظیمات</a></li>
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
 
-                <p class="text-muted m-0">@*@AuthHelper.CurrentAccountInfo().Role*@</p>
+                <p class="text-muted m-0">@AuthHelper.CurrentAccountInfo().Role</p>
             </div>
         </div>
         <!--- Divider -->
@@ -30,42 +30,65 @@
                     <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
                 </li>
 
-                @*@if (AuthHelper.CurrentAccountRole() == Roles.Administrator)
-        {*@
+                @if (AuthHelper.CurrentAccountRole() == Roles.Administrator)
+                {
 
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-people"></i><span> مدیریت کاربران </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/Accounts/Users/Index">کاربران</a></li>
-                        <li><a asp-page="/Accounts/Roles/Index">نقش ها</a></li>
-                    </ul>
-                </li>
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-image"></i><span> مدیریت تصاویر </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/ImageGallery/Slider/Index">اسلایدر</a></li>
-                        <li><a asp-page="/ImageGallery/PictureGallery/Index">گالری تصاویر</a></li>
-                        <li><a asp-page="/ImageGallery/Managers/Index">اعضای هیئت امنا</a></li>
-                    </ul>
-                </li>
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-photo-camera"></i><span> مدیریت اخبار و رویداد ها </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/Blog/ArticleCategory/Index">گروه خبری</a></li>
-                        <li><a asp-page="/Blog/Article/Index">اخبار</a></li>
-                    </ul>
-                </li>
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-pages"></i><span> مدیریت صفحات مشترک </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/CommonSection/Footer/Index">فوتر</a></li>
-                        <li><a asp-page="/CommonSection/AboutContactUs/Index">درباره ما</a></li>
-                        <li><a asp-page="/CommonSection/AboutContactUs/Index">ارتباط با ما</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a asp-page="/ImageGallery/Partners/Index" class="waves-effect"><i class="md md-verified-user"></i><span>مدیریت همکاران</span></a>
-                </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-people"></i><span> مدیریت کاربران </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/Accounts/Users/Index">کاربران</a></li>
+                            <li><a asp-page="/Accounts/Roles/Index">نقش ها</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-image"></i><span> مدیریت تصاویر </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/ImageGallery/Slider/Index">اسلایدر</a></li>
+                            <li><a asp-page="/ImageGallery/PictureGallery/Index">گالری تصاویر</a></li>
+                            <li><a asp-page="/ImageGallery/Managers/Index">اعضای هیئت امنا</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-photo-camera"></i><span> مدیریت اخبار و رویداد ها </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/Blog/ArticleCategory/Index">گروه خبری</a></li>
+                            <li><a asp-page="/Blog/Article/Index">اخبار</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-pages"></i><span> مدیریت صفحات مشترک </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/CommonSection/Footer/Index">فوتر</a></li>
+                            <li><a asp-page="/CommonSection/AboutContactUs/Index">درباره ما</a></li>
+                            <li><a asp-page="/CommonSection/AboutContactUs/Index">ارتباط با ما</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-page="/ImageGallery/Partners/Index" class="waves-effect"><i class="md md-verified-user"></i><span>مدیریت همکاران</span></a>
+                    </li>
+
+                }
+                @if (AuthHelper.CurrentAccountRole() == Roles.ContentUploader)
+                {
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-image"></i><span> مدیریت تصاویر </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/ImageGallery/Slider/Index">اسلایدر</a></li>
+                            <li><a asp-page="/ImageGallery/PictureGallery/Index">گالری تصاویر</a></li>
+                            <li><a asp-page="/ImageGallery/Managers/Index">اعضای هیئت امنا</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-photo-camera"></i><span> مدیریت اخبار و رویداد ها </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/Blog/ArticleCategory/Index">گروه خبری</a></li>
+                            <li><a asp-page="/Blog/Article/Index">اخبار</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-page="/ImageGallery/Partners/Index" class="waves-effect"><i class="md md-verified-user"></i><span>مدیریت همکاران</span></a>
+                    </li>
+                }
 
 
             </ul>
