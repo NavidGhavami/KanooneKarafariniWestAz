@@ -36,6 +36,7 @@
           "AccountManagement.Configuration": "1.0.0",
           "BlogManagement.Configuration": "1.0.0",
           "CommonSectionManagement.Configuration": "1.0.0",
+          "EntrepreneurManagement.Configuration": "1.0.0",
           "ImageGalleryManagement.Application.Contract": "1.0.0",
           "ImageGalleryManagement.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.7",
@@ -1678,6 +1679,67 @@
         },
         "compile": {
           "CommonSectionManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Application/1.0.0": {
+        "dependencies": {
+          "EntrepreneurManagement.Application.Contract": "1.0.0",
+          "EntrepreneurManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Application.dll": {}
+        },
+        "compile": {
+          "EntrepreneurManagement.Application.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Application.Contract.dll": {}
+        },
+        "compile": {
+          "EntrepreneurManagement.Application.Contract.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Configuration/1.0.0": {
+        "dependencies": {
+          "EntrepreneurManagement.Application": "1.0.0",
+          "EntrepreneurManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Configuration.dll": {}
+        },
+        "compile": {
+          "EntrepreneurManagement.Configuration.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "EntrepreneurManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Domain.dll": {}
+        },
+        "compile": {
+          "EntrepreneurManagement.Domain.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "EntrepreneurManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Infrastructure.EFCore.dll": {}
+        },
+        "compile": {
+          "EntrepreneurManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ImageGalleryManagement.Application/1.0.0": {
@@ -4364,6 +4426,31 @@
       "sha512": ""
     },
     "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

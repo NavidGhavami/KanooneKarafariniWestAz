@@ -1157,6 +1157,7 @@
     <ProjectReference Include="..\AccountManagement.Configuration\AccountManagement.Configuration.csproj" />
     <ProjectReference Include="..\BlogManagement.Configuration\BlogManagement.Configuration.csproj" />
     <ProjectReference Include="..\CommonSectionManagement.Configuration\CommonSectionManagement.Configuration.csproj" />
+    <ProjectReference Include="..\EntrepreneurManagement.Configuration\EntrepreneurManagement.Configuration.csproj" />
     <ProjectReference Include="..\ImageGalleryManagement.Application.Contract\ImageGalleryManagement.Application.Contract.csproj" />
     <ProjectReference Include="..\ImageGalleryManagement.Configuration\ImageGalleryManagement.Configuration.csproj" />
   </ItemGroup>

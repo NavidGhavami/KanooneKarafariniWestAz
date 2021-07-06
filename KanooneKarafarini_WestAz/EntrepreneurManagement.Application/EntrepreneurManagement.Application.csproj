@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntrepreneurManagement.Application.Contract\EntrepreneurManagement.Application.Contract.csproj" />
+    <ProjectReference Include="..\EntrepreneurManegement.Domain\EntrepreneurManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

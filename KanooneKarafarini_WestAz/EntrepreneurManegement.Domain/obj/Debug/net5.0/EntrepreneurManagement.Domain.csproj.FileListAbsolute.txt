@@ -1,0 +1,17 @@
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\EntrepreneurManagement.Domain.deps.json
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\EntrepreneurManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\ref\EntrepreneurManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\EntrepreneurManagement.Domain.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\0_Framework.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\EntrepreneurManagement.Application.Contract.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\0_Framework.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\bin\Debug\net5.0\EntrepreneurManagement.Application.Contract.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.csproj.AssemblyReference.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.AssemblyInfoInputs.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.AssemblyInfo.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.csproj.CoreCompileInputs.cache
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.csproj.CopyComplete
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\ref\EntrepreneurManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\EntrepreneurManegement.Domain\obj\Debug\net5.0\EntrepreneurManagement.Domain.pdb

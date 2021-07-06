@@ -54,9 +54,23 @@
 
             </ul>
         </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ثبت نام<i class="fa  fa-arrow-down pr-2"></i></a>
+            <ul class="dropdown-menu">
+                <li><a asp-page="/TrueEntrepreneur">کارآفرین حقیقی</a></li>
+                <li><a asp-page="/LegalEntrepreneur">کارآفرین حقوقی</a></li>
+                <li><a asp-page="/BeneFactorEntrepreneur">کارآفرین خیّر</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">کارآفرینان نوجوان<i class="fa  fa-arrow-down pr-2"></i></a>
+            <ul class="dropdown-menu">
+                <li><a asp-page="/TrueEntrepreneur">ثبت نام دانش آموزان</a></li>
+                <li><a asp-page="/LegalEntrepreneur">ثبت نام مربی / رهیار</a></li>
+            </ul>
+        </li>
 
         <li><a asp-page="/Managers">اعضای هیئت امنا</a></li>
-        <li><a asp-page="/PictureGallery">گالری تصاویر</a></li>
         <li><a asp-page="/AboutUs">درباره ما</a></li>
         <li><a asp-page="/ContactUs">ارتباط با ما</a></li>
 
@@ -64,7 +78,7 @@
         {
             <li><a asp-page="/Index" asp-area="Administration">مدیریت سایت</a></li>
             <li><a asp-page="/Index">@AuthHelper.CurrentAccountInfo().FullName عزیز، خوش آمدید!</a></li>
-            
+
 
 
         }

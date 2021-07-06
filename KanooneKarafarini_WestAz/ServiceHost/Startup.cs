@@ -13,6 +13,7 @@ using _0_Framework.Infrastructure;
 using AccountManagement.Configuration;
 using BlogManagement.Configuration;
 using CommonSectionManagement.Configuration;
+using EntrepreneurManagement.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 
@@ -39,6 +40,7 @@ namespace ServiceHost
             BlogManagementBootstrapper.Configure(services, connectionString);
             CommonSectionManagementBootstrapper.Configure(services, connectionString);
             AccountManagementBootstrapper.Configure(services, connectionString);
+            EntrepreneurManagementBootstrapper.Configure(services, connectionString);
 
 
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));

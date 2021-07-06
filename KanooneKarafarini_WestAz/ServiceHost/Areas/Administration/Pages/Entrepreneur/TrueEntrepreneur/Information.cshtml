@@ -1,0 +1,67 @@
+﻿@model EntrepreneurManagement.Application.Contract.TrueEntrepreneur.TrueEntrepreneurViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">کارآفرین حقیقی: @Model.Name @Model.Family</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>نام</th>
+                <th>نام خانوادگی</th>
+                <th>کد ملی</th>
+                <th>تاریخ تولد</th>
+                <th>عنوان فعالیت اقتصادی</th>
+                <th>شهر محل سکونت</th>
+                <th>تلفن</th>
+                <th>موبایل</th>
+                <th>آدرس</th>
+                <th>تاریخ ثبت نام</th>
+                
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+                <td>@Model.Family</td>
+                <td>@Model.NationalId</td>
+                <td>@Model.BirthDate</td>
+                <td>@Model.ActivitySubject</td>
+                <td>@Model.City</td>
+                <td>@Model.Phone</td>
+                <td>@Model.Mobile</td>
+                <td>@Model.Address</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        
+
+
+
+        </tbody>
+
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+

@@ -2089,6 +2089,77 @@
           "bin/placeholder/CommonSectionManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "EntrepreneurManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntrepreneurManagement.Application.Contract": "1.0.0",
+          "EntrepreneurManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Application.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Application.Contract.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntrepreneurManagement.Application": "1.0.0",
+          "EntrepreneurManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Configuration.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "EntrepreneurManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Domain.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntrepreneurManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "ImageGalleryManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6865,6 +6936,31 @@
       "path": "../CommonSectionManagement.Infrastructure.EFCore/CommonSectionManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../CommonSectionManagement.Infrastructure.EFCore/CommonSectionManagement.Infrastructure.EFCore.csproj"
     },
+    "EntrepreneurManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManagement.Application/EntrepreneurManagement.Application.csproj",
+      "msbuildProject": "../EntrepreneurManagement.Application/EntrepreneurManagement.Application.csproj"
+    },
+    "EntrepreneurManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManagement.Application.Contract/EntrepreneurManagement.Application.Contract.csproj",
+      "msbuildProject": "../EntrepreneurManagement.Application.Contract/EntrepreneurManagement.Application.Contract.csproj"
+    },
+    "EntrepreneurManagement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManagement.Configuration/EntrepreneurManagement.Configuration.csproj",
+      "msbuildProject": "../EntrepreneurManagement.Configuration/EntrepreneurManagement.Configuration.csproj"
+    },
+    "EntrepreneurManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManegement.Domain/EntrepreneurManagement.Domain.csproj",
+      "msbuildProject": "../EntrepreneurManegement.Domain/EntrepreneurManagement.Domain.csproj"
+    },
+    "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManagement.Infrastructure.EFCore/EntrepreneurManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../EntrepreneurManagement.Infrastructure.EFCore/EntrepreneurManagement.Infrastructure.EFCore.csproj"
+    },
     "ImageGalleryManagement.Application/1.0.0": {
       "type": "project",
       "path": "../ImageGalleryManagement.Application/ImageGalleryManagement.Application.csproj",
@@ -6896,6 +6992,7 @@
       "AccountManagement.Configuration >= 1.0.0",
       "BlogManagement.Configuration >= 1.0.0",
       "CommonSectionManagement.Configuration >= 1.0.0",
+      "EntrepreneurManagement.Configuration >= 1.0.0",
       "ImageGalleryManagement.Application.Contract >= 1.0.0",
       "ImageGalleryManagement.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.7"
@@ -6936,6 +7033,9 @@
             },
             "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\CommonSectionManagement.Configuration\\CommonSectionManagement.Configuration.csproj": {
               "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\CommonSectionManagement.Configuration\\CommonSectionManagement.Configuration.csproj"
+            },
+            "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\EntrepreneurManagement.Configuration\\EntrepreneurManagement.Configuration.csproj": {
+              "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\EntrepreneurManagement.Configuration\\EntrepreneurManagement.Configuration.csproj"
             },
             "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Application.Contract\\ImageGalleryManagement.Application.Contract.csproj": {
               "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\ImageGalleryManagement.Application.Contract\\ImageGalleryManagement.Application.Contract.csproj"
