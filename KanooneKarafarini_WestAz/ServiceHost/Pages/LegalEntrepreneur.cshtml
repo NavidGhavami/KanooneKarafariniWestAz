@@ -1,0 +1,89 @@
+﻿@page
+@model ServiceHost.Pages.LegalEntrepreneurModel
+
+
+@{
+    ViewData["Title"] = "ثبت نام کارآفرین حقوقی";
+}
+
+<section class="container-fluid mt-3 error404">
+    <div class="container p-3 box">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="bt-color pb-3 IRANSansWeb_Light pr-4">عضویت حقوقی کانون کارآفرینی استان آذربایجان غربی</h4>
+                <hr />
+                <hr />
+                <br />
+                <div>
+                    <form method="post" style="padding-right: 15px; padding-left: 15px;" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="company">نام شرکت</label>
+                                <input class="form-control" name="company" id="company" type="text" placeholder="نام شرکت" required oninvalid="this.setCustomValidity('لطفا نام شرکت خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="companyId">شناسه ملی شرکت</label>
+                                <input class="form-control" name="companyId" id="companyId" type="text" placeholder="شناسه ملی شرکت" required oninvalid="this.setCustomValidity('لطفا شناسه ملی شرکت خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="managerName">نام مدیرعامل شرکت </label>
+                                <input class="form-control" name="managerName" id="managerName" type="text" placeholder="نام مدیرعامل شرکت" required oninvalid="this.setCustomValidity('لطفا نام مدیرعامل شرکت خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="managerFamily">نام خانوادگی مدیرعامل شرکت</label>
+                                <input class="form-control" name="managerFamily" id="managerFamily" type="text" placeholder="نام خانوادگی مدیرعامل شرکت" required oninvalid="this.setCustomValidity('لطفا نام خانوادگی مدیرعامل شرکت خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="managerNationalId">کد ملی مدیرعامل شرکت</label>
+                                <input class="form-control" name="managerNationalId" id="managerNationalId" type="text" placeholder="کد ملی مدیرعامل شرکت" required oninvalid="this.setCustomValidity('لطفا کد ملی مدیرعامل شرکت خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="companySubject">موضوع شرکت </label>
+                                <input class="form-control" name="companySubject" id="companySubject" type="text" placeholder="موضوع شرکت" required oninvalid="this.setCustomValidity('لطفا موضوع شرکت خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="companyCity">شهر محل فعالیت شرکت</label>
+                                <input class="form-control" name="companyCity" id="companyCity" type="text" placeholder="شهر محل فعالیت شرکت" required oninvalid="this.setCustomValidity('لطفا شهر محل فعالیت شرکت خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="companyPhone">تلفن ثابت شرکت </label>
+                                <input class="form-control" name="companyPhone" id="companyPhone" type="text" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت شرکت خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="companyMobile">موبایل شرکت</label>
+                                <input class="form-control" name="companyMobile" id="companyMobile" type="text" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل شرکت خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="companyAddress">آدرس محل سکونت شرکت </label>
+                                <input class="form-control" name="companyAddress" id="companyAddress" type="text" placeholder="آدرس محل سکونت شرکت" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت شرکت خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="companyResume">آپلود روزنامه رسمی شرکت</label>
+                                <br />
+                                <label class="control-label text-danger" for="companyResume">نکته: فایل مورد نظر حتما باید به صورت jpg و یا png باشد</label>
+                                <input class="" name="companyResume" id="companyResume" type="file" required
+                                       oninvalid="this.setCustomValidity('لطفا روزنامه رسمی شرکت خود را آپلود کنید')" accept=".jpg, .png">
+                            </div>
+                        </div>
+                        <button class="btn btn-grad btn-block text-white mb-3 py-2" type="submit">تایید اطلاعات و ثبت نام<i class="fa fa-chevron-left mr-2"></i> </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

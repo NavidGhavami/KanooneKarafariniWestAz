@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace EntrepreneurManagement.Application.Contract.TrueEntrepreneur
+﻿namespace EntrepreneurManagement.Application.Contract.TrueEntrepreneur
 {
     public class TrueEntrepreneurViewModel
     {

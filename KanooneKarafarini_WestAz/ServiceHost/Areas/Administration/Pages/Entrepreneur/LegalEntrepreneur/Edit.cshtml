@@ -1,0 +1,105 @@
+﻿@model EntrepreneurManagement.Application.Contract.LegalEntrepreneur.EditLegalEntrepreneur
+
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش کارآفرین حقوقی: @Model.Company </h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Company" class="control-label">نام شرکت</label>
+                    <input type="text" class="form-control" asp-for="Company">
+                    <span asp-validation-for="Company" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanyId" class="control-label">شناسه ملی شرکت</label>
+                    <input type="text" class="form-control" asp-for="CompanyId">
+                    <span asp-validation-for="CompanyId" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="ManagerName" class="control-label">نام مدیرعامل شرکت</label>
+                    <input type="text" class="form-control" asp-for="ManagerName">
+                    <span asp-validation-for="ManagerName" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="ManagerFamily" class="control-label">نام خانوادگی مدیرعامل </label>
+                    <input type="text" class="form-control" asp-for="ManagerFamily">
+                    <span asp-validation-for="ManagerFamily" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="ManagerNationalId" class="control-label">کد ملی مدیرعامل شرکت</label>
+                    <input type="text" class="form-control" asp-for="ManagerNationalId">
+                    <span asp-validation-for="ManagerNationalId" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanySubject" class="control-label">موضوع شرکت</label>
+                    <input type="text" class="form-control" asp-for="CompanySubject">
+                    <span asp-validation-for="CompanySubject" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanyCity" class="control-label">شهر محل سکونت شرکت</label>
+                    <input type="text" class="form-control" asp-for="CompanyCity">
+                    <span asp-validation-for="CompanyCity" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanyPhone" class="control-label">تلفن ثابت شرکت</label>
+                    <input type="text" class="form-control" asp-for="CompanyPhone">
+                    <span asp-validation-for="CompanyPhone" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanyMobile" class="control-label">مویایل شرکت</label>
+                    <input type="text" class="form-control" asp-for="CompanyMobile">
+                    <span asp-validation-for="CompanyMobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CompanyAddress" class="control-label">آدرس شرکت</label>
+                    <input type="text" class="form-control" asp-for="CompanyAddress" />
+                    <span asp-validation-for="CompanyAddress" class="error"></span>
+                </div>
+            </div>
+            <input type="hidden" class="form-control" asp-for="Id" value="@Model.Id" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-warning waves-effect waves-light">ویرایش </button>
+    </div>
+</form>

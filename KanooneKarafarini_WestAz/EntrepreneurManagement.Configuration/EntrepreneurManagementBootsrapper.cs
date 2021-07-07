@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EntrepreneurManagement.Application;
+﻿using EntrepreneurManagement.Application;
+using EntrepreneurManagement.Application.Contract.LegalEntrepreneur;
 using EntrepreneurManagement.Application.Contract.TrueEntrepreneur;
+using EntrepreneurManagement.Domain.LegalEntrepreneur;
 using EntrepreneurManagement.Domain.TrueEntrepreneur;
 using EntrepreneurManagement.Infrastructure.EFCore;
 using EntrepreneurManagement.Infrastructure.EFCore.Repository;
@@ -21,7 +18,8 @@ namespace EntrepreneurManagement.Configuration
             services.AddTransient<ITrueEntrepreneurApplication, TrueEntrepreneurApplication>();
             services.AddTransient<ITrueEntrepreneurRepository, TrueEntrepreneurRepository>();
 
-
+            services.AddTransient<ILegalEntrepreneurApplication, LegalEntrepreneurApplication>();
+            services.AddTransient<ILegalEntrepreneurRepository, LegalEntrepreneurRepository>();
 
 
 
