@@ -1,0 +1,69 @@
+﻿@model EntrepreneurManagement.Application.Contract.RahyarEntrepreneur.RahyarEntrepreneurViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">کارآفرین مربی / رهیار: @Model.RahyarName @Model.RahyarFamily</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>نام</th>
+                <th>نام خانوادگی</th>
+                <th>کد ملی</th>
+                <th>تاریخ تولد</th>
+                <th>مقطع تحصیلی</th>
+                <th>رشته تحصیلی</th>
+                <th>شهر محل سکونت</th>
+                <th>تلفن</th>
+                <th>موبایل</th>
+                <th>آدرس</th>
+                <th>تاریخ ثبت نام</th>
+
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>@Model.RahyarName</td>
+                <td>@Model.RahyarFamily</td>
+                <td>@Model.RahyarNationalId</td>
+                <td>@Model.RahyarBirthDate</td>
+                <td>@Model.RahyarEducation</td>
+                <td>@Model.RahyarCourse</td>
+                <td>@Model.RahyarCity</td>
+                <td>@Model.RahyarPhone</td>
+                <td>@Model.RahyarMobile</td>
+                <td>@Model.RahyarAddress</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        
+
+
+
+        </tbody>
+
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+

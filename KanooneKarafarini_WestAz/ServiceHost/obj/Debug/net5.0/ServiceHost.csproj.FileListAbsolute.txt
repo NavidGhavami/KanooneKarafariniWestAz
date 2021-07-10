@@ -189,3 +189,7 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Entrepreneur\StudentEntrepreneur\Index.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Entrepreneur\StudentEntrepreneur\Information.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\StudentEntrepreneur.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Entrepreneur\RahyarEntrepreneur\Edit.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Entrepreneur\RahyarEntrepreneur\Index.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Entrepreneur\RahyarEntrepreneur\Information.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\RahyarEntrepreneur.cshtml.g.cs
