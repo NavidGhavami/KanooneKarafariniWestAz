@@ -1,7 +1,9 @@
 ﻿using EntrepreneurManagement.Application;
 using EntrepreneurManagement.Application.Contract.LegalEntrepreneur;
+using EntrepreneurManagement.Application.Contract.StudentEntrepreneur;
 using EntrepreneurManagement.Application.Contract.TrueEntrepreneur;
 using EntrepreneurManagement.Domain.LegalEntrepreneur;
+using EntrepreneurManagement.Domain.StudentEntrepreneur;
 using EntrepreneurManagement.Domain.TrueEntrepreneur;
 using EntrepreneurManagement.Infrastructure.EFCore;
 using EntrepreneurManagement.Infrastructure.EFCore.Repository;
@@ -20,6 +22,9 @@ namespace EntrepreneurManagement.Configuration
 
             services.AddTransient<ILegalEntrepreneurApplication, LegalEntrepreneurApplication>();
             services.AddTransient<ILegalEntrepreneurRepository, LegalEntrepreneurRepository>();
+
+            services.AddTransient<IStudentEntrepreneurApplication, StudentEntrepreneurApplication>();
+            services.AddTransient<IStudentEntrepreneurRepository, StudentEntrepreneurRepository>();
 
 
 

@@ -1,0 +1,75 @@
+﻿@model EntrepreneurManagement.Application.Contract.StudentEntrepreneur.StudentEntrepreneurViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">کارآفرین نوجوان: @Model.StudentName @Model.StudentFamily</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>نام</th>
+                <th>نام خانوادگی</th>
+                <th>کد ملی</th>
+                <th>تاریخ تولد</th>
+                <th>مقطع تحصیلی</th>
+                <th>نام مدرسه</th>
+                <th>شهر محل تحصیل</th>
+                <th>ولی دانش آموز</th>
+                <th>کد ملی ولی دانش آموز</th>
+                <th>شغل ولی دانش آموز</th>
+                <th>تلفن</th>
+                <th>موبایل</th>
+                <th>آدرس</th>
+                <th>تاریخ ثبت نام</th>
+
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>@Model.StudentName</td>
+                <td>@Model.StudentFamily</td>
+                <td>@Model.StudentNationalId</td>
+                <td>@Model.StudentBirthDate</td>
+                <td>@Model.Education</td>
+                <td>@Model.StudentSchool</td>
+                <td>@Model.StudentCity</td>
+                <td>@Model.ParentFullname</td>
+                <td>@Model.ParentNationalId</td>
+                <td>@Model.ParentJob</td>
+                <td>@Model.StudentPhone</td>
+                <td>@Model.StudentMobile</td>
+                <td>@Model.StudentAddress</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        
+
+
+
+        </tbody>
+
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+

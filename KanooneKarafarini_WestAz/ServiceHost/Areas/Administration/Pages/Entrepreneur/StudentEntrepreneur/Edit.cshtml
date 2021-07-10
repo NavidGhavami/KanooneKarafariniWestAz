@@ -1,0 +1,128 @@
+﻿@model EntrepreneurManagement.Application.Contract.StudentEntrepreneur.EditStudentEntrepreneur
+
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش کارآفرین نوجوان: @Model.StudentName @Model.StudentFamily </h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentName" class="control-label">نام</label>
+                    <input type="text" class="form-control" asp-for="StudentName">
+                    <span asp-validation-for="StudentName" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentFamily" class="control-label">نام خانوادگی</label>
+                    <input type="text" class="form-control" asp-for="StudentFamily">
+                    <span asp-validation-for="StudentFamily" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="StudentNationalId" class="control-label">کد ملی</label>
+                    <input type="text" class="form-control" asp-for="StudentNationalId">
+                    <span asp-validation-for="StudentNationalId" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="StudentBirthDate" class="control-label">تاریخ تولد</label>
+                    <input type="text" class="form-control" asp-for="StudentBirthDate">
+                    <span asp-validation-for="StudentBirthDate" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="Education" class="control-label">مقطع تحصیلی</label>
+                    <input type="text" class="form-control" asp-for="Education">
+                    <span asp-validation-for="Education" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentSchool" class="control-label">مدرسه</label>
+                    <input type="text" class="form-control" asp-for="StudentSchool">
+                    <span asp-validation-for="StudentSchool" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentCity" class="control-label">شهر محل تحصیل</label>
+                    <input type="text" class="form-control" asp-for="StudentCity">
+                    <span asp-validation-for="StudentCity" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="ParentFullname" class="control-label">نام ولی</label>
+                    <input type="text" class="form-control" asp-for="ParentFullname">
+                    <span asp-validation-for="ParentFullname" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="ParentNationalId" class="control-label">کد ملی ولی</label>
+                    <input type="text" class="form-control" asp-for="ParentNationalId">
+                    <span asp-validation-for="ParentNationalId" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="ParentJob" class="control-label">شغل ولی</label>
+                    <input type="text" class="form-control" asp-for="ParentJob">
+                    <span asp-validation-for="ParentJob" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentPhone" class="control-label">تلفن ثابت</label>
+                    <input type="text" class="form-control" asp-for="StudentPhone">
+                    <span asp-validation-for="StudentPhone" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentMobile" class="control-label">موبایل</label>
+                    <input type="text" class="form-control" asp-for="StudentMobile">
+                    <span asp-validation-for="StudentMobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="StudentAddress" class="control-label">آدرس</label>
+                    <input type="text" class="form-control" asp-for="StudentAddress" />
+                    <span asp-validation-for="StudentAddress" class="error"></span>
+                </div>
+            </div>
+            <input type="hidden" class="form-control" asp-for="Id" value="@Model.Id" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-warning waves-effect waves-light">ویرایش </button>
+    </div>
+</form>

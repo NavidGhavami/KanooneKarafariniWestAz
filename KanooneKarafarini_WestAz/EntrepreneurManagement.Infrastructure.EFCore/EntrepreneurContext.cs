@@ -1,4 +1,5 @@
 ﻿using EntrepreneurManagement.Domain.LegalEntrepreneur;
+using EntrepreneurManagement.Domain.StudentEntrepreneur;
 using EntrepreneurManagement.Domain.TrueEntrepreneur;
 using EntrepreneurManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ namespace EntrepreneurManagement.Infrastructure.EFCore
     {
         public DbSet<TrueEntrepreneur> TrueEntrepreneurs { get; set; }
         public DbSet<LegalEntrepreneur> LegalEntrepreneurs { get; set; }
+        public DbSet<StudentEntrepreneur> StudentEntrepreneurs { get; set; }
 
 
         public EntrepreneurContext(DbContextOptions<EntrepreneurContext> options) : base(options)

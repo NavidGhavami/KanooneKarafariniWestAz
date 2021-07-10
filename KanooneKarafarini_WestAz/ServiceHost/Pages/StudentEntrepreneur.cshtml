@@ -1,0 +1,102 @@
+﻿@page
+@model ServiceHost.Pages.StudentEntrepreneurModel
+
+@{
+    ViewData["Title"] = "ثبت نام کارآفرین نوجوان";
+}
+
+<section class="container-fluid mt-3 error404">
+    <div class="container p-3 box">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="bt-color pb-3 IRANSansWeb_Light pr-4">عضویت کارآفرینان نوجوان کانون کارآفرینی استان آذربایجان غربی</h4>
+                <hr />
+                <hr />
+                <br />
+                <div>
+                    <form method="post" style="padding-right: 15px; padding-left: 15px;" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="studentName">نام </label>
+                                <input class="form-control" name="studentName" id="studentName" type="text" placeholder="نام دانش آموز" required oninvalid="this.setCustomValidity('لطفا نام خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="studentFamily">نام خانوادگی</label>
+                                <input class="form-control" name="studentFamily" id="studentFamily" type="text" placeholder="نام و نام خانوادگی دانش آموز" required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="studentNationalId">کد ملی </label>
+                                <input class="form-control" name="studentNationalId" id="studentNationalId" type="text" placeholder="کد ملی 10 رقمی دانش آموز" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="studentBirthDate">تاریخ تولد</label>
+                                <input class="form-control" name="studentBirthDate" id="studentBirthDate" type="text" placeholder="تاریخ تولد: 1372/11/26" required oninvalid="this.setCustomValidity('لطفا تاریخ تولد خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="education">مقطع تحصیلی</label>
+                                <input class="form-control" name="education" id="education" type="text" placeholder="مقطع تحصیلی" required oninvalid="this.setCustomValidity('لطفا مقطع تحصیلی خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="studentSchool">نام مدرسه</label>
+                                <input class="form-control" name="studentSchool" id="studentSchool" type="text" placeholder="نام مدرسه" required oninvalid="this.setCustomValidity('لطفا نام مدرسه خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="studentCity">شهر محل تحصیل</label>
+                                <input class="form-control" name="studentCity" id="studentCity" type="text" placeholder="شهر محل تحصیل" required oninvalid="this.setCustomValidity('لطفا شهر محل تحصیل خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="parentFullname">نام و نام خانوادگی ولی دانش آموز</label>
+                                <input class="form-control" name="parentFullname" id="parentFullname" type="text" placeholder="نام و نام خانوادگی ولی دانش آموز" required oninvalid="this.setCustomValidity('لطفا نام کامل ولی دانش آموز را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="parentNationalId">کد ملی ولی</label>
+                                <input class="form-control" name="parentNationalId" id="parentNationalId" type="text" placeholder="کد ملی ولی" required oninvalid="this.setCustomValidity('لطفا کد ملی ولی خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="parentJob">شغل ولی</label>
+                                <input class="form-control" name="parentJob" id="parentJob" type="text" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا شغل ولی خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="studentPhone">تلفن ثابت </label>
+                                <input class="form-control" name="studentPhone" id="studentPhone" type="text" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="studentMobile">موبایل</label>
+                                <input class="form-control" name="studentMobile" id="studentMobile" type="text" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="studentAddress">آدرس محل سکونت </label>
+                                <input class="form-control" name="studentAddress" id="studentAddress" type="text" placeholder="آدرس محل سکونت" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="studentNationalCardPicture">آپلود تصویر کارت ملی</label>
+                                <br />
+                                <label class="control-label text-danger" for="studentNationalCardPicture">نکته: فایل مورد نظر حتما باید به صورت jpg و یا  png باشد</label>
+                                <input class="" name="studentNationalCardPicture" id="studentNationalCardPicture" type="file" required
+                                       oninvalid="this.setCustomValidity('لطفا تصویر کارت ملی خود را آپلود کنید')" accept=".jpg , .png">
+                            </div>
+                        </div>
+                        <button class="btn btn-grad btn-block text-white mb-3 py-2" type="submit">تایید اطلاعات و ثبت نام<i class="fa fa-chevron-left mr-2"></i> </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

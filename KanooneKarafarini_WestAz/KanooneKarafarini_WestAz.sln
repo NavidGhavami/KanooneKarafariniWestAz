@@ -89,15 +89,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EM.Domain", "EM.Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EM.Infrastructure", "EM.Infrastructure", "{F8AE51CC-4BCE-40A0-9CDD-917BBC72B68C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntrepreneurManagement.Domain", "EntrepreneurManegement.Domain\EntrepreneurManagement.Domain.csproj", "{57FC3A7E-FEBD-4A46-9740-F4DA105800BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntrepreneurManagement.Domain", "EntrepreneurManegement.Domain\EntrepreneurManagement.Domain.csproj", "{57FC3A7E-FEBD-4A46-9740-F4DA105800BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntrepreneurManagement.Application.Contract", "EntrepreneurManagement.Application.Contract\EntrepreneurManagement.Application.Contract.csproj", "{F5BB6B6F-E0F3-46AD-9754-118C04E6EEAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntrepreneurManagement.Application.Contract", "EntrepreneurManagement.Application.Contract\EntrepreneurManagement.Application.Contract.csproj", "{F5BB6B6F-E0F3-46AD-9754-118C04E6EEAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntrepreneurManagement.Infrastructure.EFCore", "EntrepreneurManagement.Infrastructure.EFCore\EntrepreneurManagement.Infrastructure.EFCore.csproj", "{80220036-0126-4829-B286-B34A3E0EA46A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntrepreneurManagement.Infrastructure.EFCore", "EntrepreneurManagement.Infrastructure.EFCore\EntrepreneurManagement.Infrastructure.EFCore.csproj", "{80220036-0126-4829-B286-B34A3E0EA46A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntrepreneurManagement.Configuration", "EntrepreneurManagement.Configuration\EntrepreneurManagement.Configuration.csproj", "{005C347F-A464-4656-B487-478C8255FCFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntrepreneurManagement.Configuration", "EntrepreneurManagement.Configuration\EntrepreneurManagement.Configuration.csproj", "{005C347F-A464-4656-B487-478C8255FCFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntrepreneurManagement.Application", "EntrepreneurManagement.Application\EntrepreneurManagement.Application.csproj", "{EFB52152-ACB3-4C71-8987-07FFF9A7DD10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntrepreneurManagement.Application", "EntrepreneurManagement.Application\EntrepreneurManagement.Application.csproj", "{EFB52152-ACB3-4C71-8987-07FFF9A7DD10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
