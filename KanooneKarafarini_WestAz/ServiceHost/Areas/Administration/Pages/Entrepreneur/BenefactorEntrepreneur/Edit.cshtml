@@ -1,0 +1,117 @@
+﻿@model EntrepreneurManagement.Application.Contract.BenefactorEntrepreneur.EditBenefactorEntrepreneur
+
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش کارآفرین خیّر: @Model.BenefactorName @Model.BenefactorFamily </h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="BenefactorName" class="control-label">نام</label>
+                    <input type="text" class="form-control" asp-for="BenefactorName">
+                    <span asp-validation-for="BenefactorName" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="BenefactorFamily" class="control-label">نام خانوادگی</label>
+                    <input type="text" class="form-control" asp-for="BenefactorFamily">
+                    <span asp-validation-for="BenefactorFamily" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="BenefactorNationalId" class="control-label">کد ملی</label>
+                    <input type="text" class="form-control" asp-for="BenefactorNationalId">
+                    <span asp-validation-for="BenefactorNationalId" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="BenefactorJob" class="control-label">شغل خیّر</label>
+                    <input type="text" class="form-control" asp-for="BenefactorJob">
+                    <span asp-validation-for="BenefactorJob" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="BenefactorCooperation" class="control-label">نوع همکاری</label>
+                    <select class="form-control" asp-for="BenefactorCooperation">
+                        <option disabled="true" selected="" value="0">
+                            نوع همکاری خیّر را انتخاب کنید ...
+                        </option>
+                        <option value="اشتغال">
+                            اشتغال
+                        </option>
+                        <option value="تسهیلات">
+                            تسهیلات
+                        </option>
+                        <option value="کمک بلاعوض">
+                            کمک بلاعوض
+                        </option>
+                        <option value="تجهیزات کار">
+                            تجهیزات کار
+                        </option>
+                        <option value="سایر">
+                            سایر
+                        </option>
+                    </select>
+                    <span asp-validation-for="BenefactorCooperation" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="BenefactorPhone" class="control-label">تلفن ثابت</label>
+                    <input type="text" class="form-control" asp-for="BenefactorPhone">
+                    <span asp-validation-for="BenefactorPhone" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="BenefactorMobile" class="control-label">موبایل</label>
+                    <input type="text" class="form-control" asp-for="BenefactorMobile">
+                    <span asp-validation-for="BenefactorMobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="BenefactorAddress" class="control-label">آدرس</label>
+                    <input type="text" class="form-control" asp-for="BenefactorAddress" />
+                    <span asp-validation-for="BenefactorAddress" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CooperationDescription" class="control-label">توضیحات نوع همکاری</label>
+                    <input type="text" class="form-control" asp-for="CooperationDescription" />
+                    <span asp-validation-for="CooperationDescription" class="error"></span>
+                </div>
+            </div>
+            <input type="hidden" class="form-control" asp-for="Id" value="@Model.Id" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-warning waves-effect waves-light">ویرایش </button>
+    </div>
+</form>

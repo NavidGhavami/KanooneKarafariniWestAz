@@ -28,12 +28,12 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="studentNationalId">کد ملی </label>
-                                <input class="form-control" name="studentNationalId" id="studentNationalId" type="text" placeholder="کد ملی 10 رقمی دانش آموز" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
+                                <input class="form-control" name="studentNationalId" id="studentNationalId" type="text" maxlength="10" pattern="[0-9]{10}" placeholder="کد ملی 10 رقمی دانش آموز" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
 
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="studentBirthDate">تاریخ تولد</label>
-                                <input class="form-control" name="studentBirthDate" id="studentBirthDate" type="text" placeholder="تاریخ تولد: 1372/11/26" required oninvalid="this.setCustomValidity('لطفا تاریخ تولد خود را وارد کنید')">
+                                <input class="form-control" name="studentBirthDate" id="studentBirthDate" type="text" maxlength="10" pattern="([12]\d{3}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01]))" placeholder="مثال: 1372/11/26" required oninvalid="this.setCustomValidity('لطفا تاریخ تولد خود را وارد کنید')">
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="education">مقطع تحصیلی</label>
@@ -59,28 +59,29 @@
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="parentNationalId">کد ملی ولی</label>
-                                <input class="form-control" name="parentNationalId" id="parentNationalId" type="text" placeholder="کد ملی ولی" required oninvalid="this.setCustomValidity('لطفا کد ملی ولی خود را وارد کنید')">
+                                <input class="form-control" name="parentNationalId" id="parentNationalId" type="text" maxlength="10" pattern="[0-9]{10}" placeholder="کد ملی 10 رقمی ولی" required oninvalid="this.setCustomValidity('لطفا کد ملی ولی خود را وارد کنید')">
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="parentJob">شغل ولی</label>
-                                <input class="form-control" name="parentJob" id="parentJob" type="text" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا شغل ولی خود را وارد کنید')">
+                                <input class="form-control" name="parentJob" id="parentJob" type="text" placeholder="شغل ولی" required oninvalid="this.setCustomValidity('لطفا شغل ولی خود را وارد کنید')">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <label class="control-label" for="studentPhone">تلفن ثابت </label>
-                                <input class="form-control" name="studentPhone" id="studentPhone" type="text" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
+                                <input class="form-control" name="studentPhone" id="studentPhone" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
 
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <label class="control-label" for="studentMobile">موبایل</label>
-                                <input class="form-control" name="studentMobile" id="studentMobile" type="text" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
+                                <input class="form-control" name="studentMobile" id="studentMobile" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 col-md-12">
                                 <label class="control-label" for="studentAddress">آدرس محل سکونت </label>
-                                <input class="form-control" name="studentAddress" id="studentAddress" type="text" placeholder="آدرس محل سکونت" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت خود را وارد کنید')">
+                                <textarea class="form-control area mb-2" name="studentAddress" id="studentAddress" cols="60" rows="9" placeholder="آدرس محل سکونت" style="height: 150px!important" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت خود را وارد کنید')"></textarea>
+
                             </div>
                         </div>
                         <div class="row">

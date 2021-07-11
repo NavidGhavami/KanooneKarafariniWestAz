@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using _0_Framework.Application
+@inject IAuthHelper AuthHelper
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -71,6 +73,14 @@
                         <span class="text-white">
                             امروز : @DateTime.Now.ToString("dddd, dd MMMM yyyy")
                         </span>
+                        <span class="text-white">
+                            @if (AuthHelper.IsAuthenticated())
+                            {
+                                <a class="text-white" asp-page="/Index">@AuthHelper.CurrentAccountInfo().FullName عزیز، خوش آمدید!</a>
+
+                            }
+                        </span>
+                        
                         <form class="d-sm-block d-none">
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="جستجو ..">

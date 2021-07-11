@@ -29,12 +29,12 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="nationalId">کد ملی </label>
-                                <input class="form-control" name="nationalId" id="nationalId" type="text" placeholder="کد ملی 10 رقمی" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
+                                <input class="form-control" name="nationalId" id="nationalId" type="text" maxlength="10" pattern="[0-9]{10}" placeholder="کد ملی 10 رقمی" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
 
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="birthDate">تاریخ تولد</label>
-                                <input class="form-control" name="birthDate" id="birthDate" type="text" placeholder="تاریخ تولد: 1372/11/26" required oninvalid="this.setCustomValidity('لطفا تاریخ تولد خود را وارد کنید')">
+                                <input class="form-control" name="birthDate" id="birthDate" type="text" maxlength="10" pattern="([12]\d{3}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01]))" placeholder="مثال: 1372/11/26" required oninvalid="this.setCustomValidity('لطفا تاریخ تولد خود را وارد کنید')">
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="activitySubject">عنوان فعالیت اقتصادی</label>
@@ -49,17 +49,18 @@
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="phone">تلفن ثابت</label>
-                                <input class="form-control" name="phone" id="phone" type="text" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
+                                <input class="form-control" name="phone" id="phone" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <label class="control-label" for="mobile">موبایل</label>
-                                <input class="form-control" name="mobile" id="mobile" type="text" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
+                                <input class="form-control" name="mobile" id="mobile" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 col-md-12">
                                 <label class="control-label" for="address">آدرس محل سکونت </label>
-                                <input class="form-control" name="address" id="address" type="text" placeholder="آدرس محل سکونت" required oninvalid="this.setCustomValidity('لطفا رزومه خود را آپلود کنید')">
+                                <textarea class="form-control area mb-2" name="address" id="address" cols="60" rows="9" placeholder="آدرس محل سکونت" style="height: 150px!important" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت خود را وارد کنید')"></textarea>
+
                             </div>
                         </div>
                         <div class="row">

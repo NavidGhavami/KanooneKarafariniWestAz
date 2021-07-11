@@ -1,0 +1,81 @@
+﻿@page
+@model ServiceHost.Pages.BenefactorEntrepreneurModel
+
+
+@{
+    ViewData["Title"] = "ثبت نام کارآفرین خیّر";
+}
+
+<section class="container-fluid mt-3 error404">
+    <div class="container p-3 box">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="bt-color pb-3 IRANSansWeb_Light pr-4">عضویت کارآفرین خیّر کانون کارآفرینی استان آذربایجان غربی</h4>
+                <hr />
+                <hr />
+                <br />
+                <div>
+                    <form method="post" style="padding-right: 15px; padding-left: 15px;" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="benefactorName">نام </label>
+                                <input class="form-control" name="benefactorName" id="benefactorName" type="text" placeholder="نام" required oninvalid="this.setCustomValidity('لطفا نام خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="benefactorFamily">نام خانوادگی</label>
+                                <input class="form-control" name="benefactorFamily" id="benefactorFamily" type="text" placeholder="نام و نام خانوادگی" required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="benefactorNationalId">کد ملی </label>
+                                <input class="form-control" name="benefactorNationalId" id="benefactorNationalId" type="text" maxlength="10" pattern="[0-9]{10}" placeholder="کد ملی 10 رقمی" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="benefactorJob">شغل خیّر</label>
+                                <input class="form-control" name="benefactorJob" id="benefactorJob" type="text" placeholder="شغل خیّر" required oninvalid="this.setCustomValidity('لطفا شغل خیّر خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="control-label" for="benefactorCooperation">نوع همکاری خیّر</label>
+                                <select name="benefactorCooperation" id="benefactorCooperation" class="form-control" required oninvalid="this.setCustomValidity('لطفا نوع همکاری خود را وارد کنید')">
+                                    <option disabled selected value="0">نوع همکاری را انتخاب نمایید ...</option>
+                                    <option value="اشتغال">اشتغال</option>
+                                    <option value="تسهیلات">تسهیلات</option>
+                                    <option value="کمک بلاعوض">کمک بلاعوض</option>
+                                    <option value="تجهیزات کار">تجهیزات کار</option>
+                                    <option value="سایر">سایر</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="benefactorPhone">تلفن ثابت</label>
+                                <input class="form-control" name="benefactorPhone" id="benefactorPhone" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="benefactorMobile">موبایل</label>
+                                <input class="form-control" name="benefactorMobile" id="benefactorMobile" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="benefactorAddress">آدرس محل سکونت </label>
+                                <textarea class="form-control area mb-2" name="benefactorAddress" id="benefactorAddress" cols="60" rows="9" placeholder="آدرس محل سکونت" style="height: 150px!important" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت شرکت خود را وارد کنید')"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="cooperationDescription">توضیحات نوع همکاری </label>
+                                <textarea class="form-control area mb-2" name="cooperationDescription" id="cooperationDescription" cols="60" rows="9" placeholder="توضیحات در مورد نوع همکاری" style="height: 150px!important"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-grad btn-block text-white mb-3 py-2" type="submit">تایید اطلاعات و ثبت نام<i class="fa fa-chevron-left mr-2"></i> </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

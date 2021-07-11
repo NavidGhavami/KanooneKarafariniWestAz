@@ -1,4 +1,5 @@
-﻿using EntrepreneurManagement.Domain.LegalEntrepreneur;
+﻿using EntrepreneurManagement.Domain.BenefactorEntrepreneur;
+using EntrepreneurManagement.Domain.LegalEntrepreneur;
 using EntrepreneurManagement.Domain.RahyarEntrepreneur;
 using EntrepreneurManagement.Domain.StudentEntrepreneur;
 using EntrepreneurManagement.Domain.TrueEntrepreneur;
@@ -13,6 +14,7 @@ namespace EntrepreneurManagement.Infrastructure.EFCore
         public DbSet<LegalEntrepreneur> LegalEntrepreneurs { get; set; }
         public DbSet<StudentEntrepreneur> StudentEntrepreneurs { get; set; }
         public DbSet<RahyarEntrepreneur> RahyarEntrepreneurs { get; set; }
+        public DbSet<BenefactorEntrepreneur> BenefactorEntrepreneurs { get; set; }
 
 
         public EntrepreneurContext(DbContextOptions<EntrepreneurContext> options) : base(options)
