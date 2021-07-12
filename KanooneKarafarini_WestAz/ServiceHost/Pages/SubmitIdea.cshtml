@@ -1,0 +1,71 @@
+﻿@page
+@model ServiceHost.Pages.SubmitIdeaModel
+
+@{
+    ViewData["Title"] = "ثبت ایده، طرح خلاقانه و نوآور";
+}
+
+<section class="container-fluid mt-3 error404">
+    <div class="container p-3 box">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="bt-color pb-3 IRANSansWeb_Light pr-4">ثبت ایده، طرح های خلاقانه و نوآور</h4>
+                <hr />
+                <hr />
+                <br />
+                <div>
+                    <form method="post" style="padding-right: 15px; padding-left: 15px;" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="applicantName">نام متقاضی </label>
+                                <input class="form-control" name="applicantName" id="applicantName" type="text" placeholder="نام" required oninvalid="this.setCustomValidity('لطفا نام خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="applicantfamily">نام خانوادگی متقاضی</label>
+                                <input class="form-control" name="applicantfamily" id="applicantfamily" type="text" placeholder="نام و نام خانوادگی" required oninvalid="this.setCustomValidity('لطفا نام خانوادگی خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="applicantNationalId">کد ملی متقاضی </label>
+                                <input class="form-control" name="applicantNationalId" id="applicantNationalId" type="text" maxlength="10" pattern="[0-9]{10}" placeholder="کد ملی 10 رقمی" required oninvalid="this.setCustomValidity('لطفا کد ملی 10 رقمی خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="proposalSubject">عنوان طرح پیشنهادی</label>
+                                <input class="form-control" name="proposalSubject" id="proposalSubject" type="text" placeholder="عنوان ایده و طرح مورد نظر" required oninvalid="this.setCustomValidity('لطفا عنوان طرح پیشنهادی خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="applicantPhone">تلفن ثابت متقاضی</label>
+                                <input class="form-control" name="applicantPhone" id="applicantPhone" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 02112345678" required oninvalid="this.setCustomValidity('لطفا تلفن ثابت خود را وارد کنید')">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="control-label" for="applicantMobile">موبایل متقاضی</label>
+                                <input class="form-control" name="applicantMobile" id="applicantMobile" type="text" maxlength="11" pattern="[0-9]{11}" placeholder="مثال: 09121234567" required oninvalid="this.setCustomValidity('لطفا موبایل خود را وارد کنید')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="applicantAddress">آدرس محل سکونت متقاضی </label>
+                                <textarea class="form-control area mb-2" name="applicantAddress" id="applicantAddress" cols="60" rows="9" placeholder="آدرس محل سکونت" style="height: 150px!important" required oninvalid="this.setCustomValidity('لطفا آدرس محل سکونت خود را وارد کنید')"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <label class="control-label" for="summaryProposal">آپلود فایل طرح پیشنهادی</label>
+                                <br />
+                                <label class="control-label text-danger" for="summaryProposal">نکته: فایل مورد نظر حتما باید به صورت pdf باشد</label>
+                                <input class="" name="summaryProposal" id="summaryProposal" type="file" required
+                                       oninvalid="this.setCustomValidity('لطفا  فایل طرح پیشنهادی خود را آپلود کنید')" accept=".pdf">
+                            </div>
+                        </div>
+                        <button class="btn btn-grad btn-block text-white mb-3 py-2" type="submit">تایید اطلاعات و ثبت نام<i class="fa fa-chevron-left mr-2"></i> </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

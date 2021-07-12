@@ -1,0 +1,82 @@
+﻿
+@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.SubmitIdea.EditSubmitIdea
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش اطلاعات متقاضی: @Model.ApplicantName @Model.ApplicantFamily </h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ApplicantName" class="control-label">نام متقاضی</label>
+                    <input type="text" class="form-control" asp-for="ApplicantName">
+                    <span asp-validation-for="ApplicantName" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ApplicantFamily" class="control-label">نام خانوادگی متقاضی</label>
+                    <input type="text" class="form-control" asp-for="ApplicantFamily">
+                    <span asp-validation-for="ApplicantFamily" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ApplicantNationalId" class="control-label">کد ملی متقاضی</label>
+                    <input type="text" class="form-control" asp-for="ApplicantNationalId">
+                    <span asp-validation-for="ApplicantNationalId" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ProposalSubject" class="control-label">عنوان طرح پیشنهادی</label>
+                    <input type="text" class="form-control" asp-for="ProposalSubject">
+                    <span asp-validation-for="ProposalSubject" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ApplicantPhone" class="control-label">تلفن ثابت</label>
+                    <input type="text" class="form-control" asp-for="ApplicantPhone">
+                    <span asp-validation-for="ApplicantPhone" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ApplicantMobile" class="control-label">موبایل</label>
+                    <input type="text" class="form-control" asp-for="ApplicantMobile">
+                    <span asp-validation-for="ApplicantMobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="ApplicantAddress" class="control-label">آدرس</label>
+                    <input type="text" class="form-control" asp-for="ApplicantAddress" />
+                    <span asp-validation-for="ApplicantAddress" class="error"></span>
+                </div>
+            </div>
+            <input type="hidden" class="form-control" asp-for="Id" value="@Model.Id" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-warning waves-effect waves-light">ویرایش </button>
+    </div>
+</form>

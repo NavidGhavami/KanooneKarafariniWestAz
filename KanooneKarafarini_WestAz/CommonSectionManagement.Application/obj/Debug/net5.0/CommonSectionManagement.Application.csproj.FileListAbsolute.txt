@@ -4,7 +4,9 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Application.pdb
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\0_Framework.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Application.Contract.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Domain.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Application.Contract.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Domain.pdb
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\0_Framework.pdb
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\obj\Debug\net5.0\CommonSectionManagement.Application.csproj.AssemblyReference.cache
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\obj\Debug\net5.0\CommonSectionManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,5 +17,3 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\obj\Debug\net5.0\CommonSectionManagement.Application.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\obj\Debug\net5.0\ref\CommonSectionManagement.Application.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\obj\Debug\net5.0\CommonSectionManagement.Application.pdb
-E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Domain.dll
-E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\CommonSectionManagement.Application\bin\Debug\net5.0\CommonSectionManagement.Domain.pdb

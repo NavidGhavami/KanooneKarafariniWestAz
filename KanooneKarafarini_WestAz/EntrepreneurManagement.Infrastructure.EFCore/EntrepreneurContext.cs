@@ -1,4 +1,5 @@
 ﻿using EntrepreneurManagement.Domain.BenefactorEntrepreneur;
+using EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Domain.LegalEntrepreneur;
 using EntrepreneurManagement.Domain.RahyarEntrepreneur;
 using EntrepreneurManagement.Domain.StudentEntrepreneur;
@@ -15,6 +16,7 @@ namespace EntrepreneurManagement.Infrastructure.EFCore
         public DbSet<StudentEntrepreneur> StudentEntrepreneurs { get; set; }
         public DbSet<RahyarEntrepreneur> RahyarEntrepreneurs { get; set; }
         public DbSet<BenefactorEntrepreneur> BenefactorEntrepreneurs { get; set; }
+        public DbSet<SubmitIdea> SubmitIdeas { get; set; }
 
 
         public EntrepreneurContext(DbContextOptions<EntrepreneurContext> options) : base(options)

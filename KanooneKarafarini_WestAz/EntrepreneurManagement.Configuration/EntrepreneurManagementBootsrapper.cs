@@ -1,10 +1,12 @@
 ﻿using EntrepreneurManagement.Application;
 using EntrepreneurManagement.Application.Contract.BenefactorEntrepreneur;
+using EntrepreneurManagement.Application.Contract.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Application.Contract.LegalEntrepreneur;
 using EntrepreneurManagement.Application.Contract.RahyarEntrepreneur;
 using EntrepreneurManagement.Application.Contract.StudentEntrepreneur;
 using EntrepreneurManagement.Application.Contract.TrueEntrepreneur;
 using EntrepreneurManagement.Domain.BenefactorEntrepreneur;
+using EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Domain.LegalEntrepreneur;
 using EntrepreneurManagement.Domain.RahyarEntrepreneur;
 using EntrepreneurManagement.Domain.StudentEntrepreneur;
@@ -35,6 +37,9 @@ namespace EntrepreneurManagement.Configuration
 
             services.AddTransient<IBenefactorEntrepreneurApplication, BenefactorEntrepreneurApplication>();
             services.AddTransient<IBenefactorEntrepreneurRepository, BenefactorEntrepreneurRepository>();
+
+            services.AddTransient<ISubmitIdeaApplication, SubmitIdeaApplication>();
+            services.AddTransient<ISubmitIdeaRepository, SubmitIdeaRepository>();
 
 
 

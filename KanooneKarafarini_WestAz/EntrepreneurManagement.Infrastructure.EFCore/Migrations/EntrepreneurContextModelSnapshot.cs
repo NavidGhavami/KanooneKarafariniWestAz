@@ -66,7 +66,6 @@ namespace EntrepreneurManagement.Infrastructure.EFCore.Migrations
                         .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("CooperationDescription")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationDate")
@@ -75,6 +74,59 @@ namespace EntrepreneurManagement.Infrastructure.EFCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BenefactorEntrepreneur");
+                });
+
+            modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea.SubmitIdea", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ApplicantAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ApplicantFamily")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("ApplicantMobile")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("ApplicantName")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("ApplicantNationalId")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("ApplicantPhone")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ProposalSubject")
+                        .IsRequired()
+                        .HasMaxLength(550)
+                        .HasColumnType("nvarchar(550)");
+
+                    b.Property<string>("SummaryProposal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SubmitIdea");
                 });
 
             modelBuilder.Entity("EntrepreneurManagement.Domain.LegalEntrepreneur.LegalEntrepreneur", b =>

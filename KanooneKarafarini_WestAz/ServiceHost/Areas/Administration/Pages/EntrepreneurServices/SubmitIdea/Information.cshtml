@@ -1,0 +1,63 @@
+﻿@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.SubmitIdea.SubmitIdeaViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ایده و طرح خلاقانه: @Model.ApplicantName @Model.ApplicantFamily</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>نام متقاضی</th>
+                <th>نام خانوادگی متقاضی</th>
+                <th>کد ملی متقاضی</th>
+                <th>عنوان طرح پیشنهادی </th>
+                <th>تلفن</th>
+                <th>موبایل</th>
+                <th>آدرس متقاضی</th>
+                <th>تاریخ ثبت نام</th>
+                
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>@Model.ApplicantName</td>
+                <td>@Model.ApplicantFamily</td>
+                <td>@Model.ApplicantNationalId</td>
+                <td>@Model.ProposalSubject</td>
+                <td>@Model.ApplicantPhone</td>
+                <td>@Model.ApplicantMobile</td>
+                <td>@Model.ApplicantAddress</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        
+
+
+
+        </tbody>
+
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+
