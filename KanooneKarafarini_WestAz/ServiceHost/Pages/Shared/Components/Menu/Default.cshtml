@@ -4,18 +4,7 @@
 
 <div class="extension-nav">
     <ul class="pt-2">
-        @if (AuthHelper.IsAuthenticated())
-        {
-
-            <li>
-
-                <a id="loginbtn" asp-page="/Account" asp-page-handler="Logout" class="btn btn-link p-1 ml-2">
-                    <img src="~/Theme/assets/Images/Svg/logout.svg" /> خروج
-                </a>
-
-            </li>
-        }
-        else
+        @if (!AuthHelper.IsAuthenticated())
         {
             <li>
                 <a id="loginbtn" asp-page="/Account" class="btn btn-link p-1 ml-2">
@@ -24,12 +13,6 @@
             </li>
         }
 
-        @*<li>
-            <a id="loginbtn" asp-page="/Register" class="btn btn-link p-1 ml-2">
-                <img src="~/Theme/assets/Images/Svg/user.svg" />عضویت
-            </a>
-        </li>*@
-    </ul>
 </div>
 <div class="sina-nav-header">
     <button type="button" class="navbar-toggle" style="background-color: darkcyan; width: 5px; height: 5px" data-toggle="collapse" data-target="#navbar-menu">
@@ -69,6 +52,13 @@
                 <li><a asp-page="/RahyarEntrepreneur">ثبت نام مربی / رهیار </a></li>
             </ul>
         </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">مرکز مشاوره و کافه<i class="fa  fa-arrow-down pr-2"></i></a>
+            <ul class="dropdown-menu">
+                <li><a asp-page="/CounselingCenters">لیست مراکز مشاوره کارآفرینی</a></li>
+                <li><a asp-page="/EntrepreneurCafes">لیست کافه های کارآفرینی</a></li>
+            </ul>
+        </li>
 
         <li><a asp-page="/SubmitIdea">ثبت ایده</a></li>
         <li><a asp-page="/Managers">اعضای هیئت امنا</a></li>
@@ -77,8 +67,13 @@
 
         @if (AuthHelper.IsAuthenticated())
         {
-            <li><a asp-page="/Index" asp-area="Administration">مدیریت سایت</a></li>
-
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">پنل ها<i class="fa  fa-arrow-down pr-2"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a asp-page="/Index" asp-area="Administration">مدیریت سایت</a></li>
+                    <li><a asp-page="/Account" asp-page-handler="Logout">خروج</a></li>
+                </ul>
+            </li>
 
         }
     </ul>

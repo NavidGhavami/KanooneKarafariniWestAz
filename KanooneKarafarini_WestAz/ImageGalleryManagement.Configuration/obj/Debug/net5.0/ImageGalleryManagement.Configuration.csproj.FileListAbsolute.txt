@@ -35,3 +35,9 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\obj\Debug\net5.0\ImageGalleryManagement.Configuration.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\obj\Debug\net5.0\ref\ImageGalleryManagement.Configuration.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\obj\Debug\net5.0\ImageGalleryManagement.Configuration.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\bin\Debug\net5.0\EntrepreneurManagement.Application.Contract.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\bin\Debug\net5.0\EntrepreneurManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\bin\Debug\net5.0\EntrepreneurManagement.Infrastructure.EFCore.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\bin\Debug\net5.0\EntrepreneurManagement.Application.Contract.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\bin\Debug\net5.0\EntrepreneurManagement.Domain.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ImageGalleryManagement.Configuration\bin\Debug\net5.0\EntrepreneurManagement.Infrastructure.EFCore.pdb

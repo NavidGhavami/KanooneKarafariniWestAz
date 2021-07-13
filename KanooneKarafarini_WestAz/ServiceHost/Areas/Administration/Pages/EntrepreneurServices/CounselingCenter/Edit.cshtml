@@ -1,0 +1,85 @@
+﻿
+@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.CounselingCenter.EditCouncelingCenter
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش مرکز مشاوره : @Model.CouncelingCenterName</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CouncelingCenterName" class="control-label">نام مرکز مشاوره</label>
+                    <input type="text" class="form-control" asp-for="CouncelingCenterName">
+                    <span asp-validation-for="CouncelingCenterName" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CouncelingCenterActivity" class="control-label">حوزه فعالیت</label>
+                    <input type="text" class="form-control" asp-for="CouncelingCenterActivity">
+                    <span asp-validation-for="CouncelingCenterActivity" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ManagerName" class="control-label">نام مدیر عامل</label>
+                    <input type="text" class="form-control" asp-for="ManagerName">
+                    <span asp-validation-for="ManagerName" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CouncelingCenterPhone" class="control-label">تلفن</label>
+                    <input type="text" class="form-control" asp-for="CouncelingCenterPhone">
+                    <span asp-validation-for="CouncelingCenterPhone" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CouncelingCenterMobile" class="control-label">موبایل</label>
+                    <input type="text" class="form-control" asp-for="CouncelingCenterMobile">
+                    <span asp-validation-for="CouncelingCenterMobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CouncelingCenterAddress" class="control-label">آدرس مرکز مشاوره</label>
+                    <input type="text" class="form-control" asp-for="CouncelingCenterAddress">
+                    <span asp-validation-for="CouncelingCenterAddress" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">توضیحات</label>
+                    <textarea class="form-control autogrow" asp-for="Description"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="Description" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" class="form-control" asp-for="Id" value="@Model.Id" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-warning waves-effect waves-light">ویرایش مرکز مشاوره</button>
+    </div>
+</form>

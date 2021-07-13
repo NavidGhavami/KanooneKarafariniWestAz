@@ -1467,6 +1467,7 @@
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
+          "EntrepreneurManagement.Infrastructure.EFCore": "1.0.0",
           "ImageGalleryManagement.EFCore": "1.0.0"
         },
         "runtime": {
@@ -1706,6 +1707,7 @@
       },
       "EntrepreneurManagement.Configuration/1.0.0": {
         "dependencies": {
+          "01_Query": "1.0.0",
           "EntrepreneurManagement.Application": "1.0.0",
           "EntrepreneurManagement.Infrastructure.EFCore": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"

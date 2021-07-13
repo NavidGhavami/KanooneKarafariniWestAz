@@ -76,6 +76,53 @@ namespace EntrepreneurManagement.Infrastructure.EFCore.Migrations
                     b.ToTable("BenefactorEntrepreneur");
                 });
 
+            modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.CouncelingCenter.CounselingCenter", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CouncelingCenterActivity")
+                        .IsRequired()
+                        .HasMaxLength(550)
+                        .HasColumnType("nvarchar(550)");
+
+                    b.Property<string>("CouncelingCenterAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CouncelingCenterMobile")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("CouncelingCenterName")
+                        .IsRequired()
+                        .HasMaxLength(550)
+                        .HasColumnType("nvarchar(550)");
+
+                    b.Property<string>("CouncelingCenterPhone")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ManagerName")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CounselingCenter");
+                });
+
             modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea.SubmitIdea", b =>
                 {
                     b.Property<long>("Id")

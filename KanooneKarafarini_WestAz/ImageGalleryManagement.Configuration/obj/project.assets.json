@@ -1817,6 +1817,7 @@
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
+          "EntrepreneurManagement.Infrastructure.EFCore": "1.0.0",
           "ImageGalleryManagement.EFCore": "1.0.0"
         },
         "compile": {
@@ -1926,6 +1927,48 @@
         },
         "runtime": {
           "bin/placeholder/CommonSectionManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Application.Contract.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "EntrepreneurManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Domain.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntrepreneurManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "compile": {
+          "bin/placeholder/EntrepreneurManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntrepreneurManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ImageGalleryManagement.Application/1.0.0": {
@@ -6610,6 +6653,21 @@
       "type": "project",
       "path": "../CommonSectionManagement.Infrastructure.EFCore/CommonSectionManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../CommonSectionManagement.Infrastructure.EFCore/CommonSectionManagement.Infrastructure.EFCore.csproj"
+    },
+    "EntrepreneurManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManagement.Application.Contract/EntrepreneurManagement.Application.Contract.csproj",
+      "msbuildProject": "../EntrepreneurManagement.Application.Contract/EntrepreneurManagement.Application.Contract.csproj"
+    },
+    "EntrepreneurManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManegement.Domain/EntrepreneurManagement.Domain.csproj",
+      "msbuildProject": "../EntrepreneurManegement.Domain/EntrepreneurManagement.Domain.csproj"
+    },
+    "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../EntrepreneurManagement.Infrastructure.EFCore/EntrepreneurManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../EntrepreneurManagement.Infrastructure.EFCore/EntrepreneurManagement.Infrastructure.EFCore.csproj"
     },
     "ImageGalleryManagement.Application/1.0.0": {
       "type": "project",

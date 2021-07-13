@@ -31,3 +31,9 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\obj\Debug\net5.0\01_Query.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\obj\Debug\net5.0\ref\01_Query.dll
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\obj\Debug\net5.0\01_Query.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\bin\Debug\net5.0\EntrepreneurManagement.Application.Contract.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\bin\Debug\net5.0\EntrepreneurManagement.Domain.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\bin\Debug\net5.0\EntrepreneurManagement.Infrastructure.EFCore.dll
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\bin\Debug\net5.0\EntrepreneurManagement.Infrastructure.EFCore.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\bin\Debug\net5.0\EntrepreneurManagement.Application.Contract.pdb
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\01_Query\bin\Debug\net5.0\EntrepreneurManagement.Domain.pdb

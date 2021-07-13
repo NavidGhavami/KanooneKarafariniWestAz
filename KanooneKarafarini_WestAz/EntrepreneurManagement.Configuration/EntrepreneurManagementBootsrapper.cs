@@ -1,11 +1,15 @@
-﻿using EntrepreneurManagement.Application;
+﻿using _01_Query.Contract.CounselingCenter;
+using _01_Query.Query;
+using EntrepreneurManagement.Application;
 using EntrepreneurManagement.Application.Contract.BenefactorEntrepreneur;
+using EntrepreneurManagement.Application.Contract.EntrepreneurServices.CounselingCenter;
 using EntrepreneurManagement.Application.Contract.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Application.Contract.LegalEntrepreneur;
 using EntrepreneurManagement.Application.Contract.RahyarEntrepreneur;
 using EntrepreneurManagement.Application.Contract.StudentEntrepreneur;
 using EntrepreneurManagement.Application.Contract.TrueEntrepreneur;
 using EntrepreneurManagement.Domain.BenefactorEntrepreneur;
+using EntrepreneurManagement.Domain.EntrepreneurServices.CouncelingCenter;
 using EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Domain.LegalEntrepreneur;
 using EntrepreneurManagement.Domain.RahyarEntrepreneur;
@@ -40,6 +44,12 @@ namespace EntrepreneurManagement.Configuration
 
             services.AddTransient<ISubmitIdeaApplication, SubmitIdeaApplication>();
             services.AddTransient<ISubmitIdeaRepository, SubmitIdeaRepository>();
+
+            services.AddTransient<ICounselingCenterApplication, CounselingCenterApplication>();
+            services.AddTransient<ICouncelingCenterRepository, CouncelingCenterRepository>();
+
+
+            services.AddTransient<ICounselingCenterQuery, CounselingCenterQuery>();
 
 
 

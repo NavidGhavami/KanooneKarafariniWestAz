@@ -10,6 +10,7 @@
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommonSectionManagement.Infrastructure.EFCore": "1.0.0",
+          "EntrepreneurManagement.Infrastructure.EFCore": "1.0.0",
           "ImageGalleryManagement.EFCore": "1.0.0"
         },
         "runtime": {
@@ -1400,6 +1401,33 @@
           "CommonSectionManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "EntrepreneurManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Application.Contract.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "EntrepreneurManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Domain.dll": {}
+        }
+      },
+      "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "EntrepreneurManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
+        },
+        "runtime": {
+          "EntrepreneurManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "ImageGalleryManagement.Application.Contract/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0"
@@ -2299,6 +2327,21 @@
       "sha512": ""
     },
     "CommonSectionManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntrepreneurManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

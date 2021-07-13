@@ -1,0 +1,63 @@
+﻿@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.CounselingCenter.CouncelingCenterViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">مرکز مشاوره: @Model.CouncelingCenterName</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>نام مرکز مشاوره</th>
+                <th>حوزه فعالیت</th>
+                <th>نام مدیرعامل</th>
+                <th>تلفن</th>
+                <th>موبایل</th>
+                <th>آدرس مرکز مشاوره</th>
+                <th>نوضیحات</th>
+                <th>تاریخ ایجاد</th>
+
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>@Model.CouncelingCenterName</td>
+                <td>@Model.CouncelingCenterActivity</td>
+                <td>@Model.ManagerName</td>
+                <td>@Model.CouncelingCenterPhone</td>
+                <td>@Model.CouncelingCenterMobile</td>
+                <td>@Model.CouncelingCenterAddress</td>
+                <td>@Model.Description</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        
+
+
+
+        </tbody>
+
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+
