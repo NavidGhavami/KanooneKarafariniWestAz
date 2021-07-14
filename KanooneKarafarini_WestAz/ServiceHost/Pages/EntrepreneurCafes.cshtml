@@ -1,0 +1,48 @@
+﻿@page
+@model ServiceHost.Pages.EntrepreneurCafesModel
+
+
+@{
+    ViewData["Title"] = "کافه های کانون کارآفرینی استان آذربایجان غربی";
+}
+<section class="container-fluid mt-3">
+    <div class="container p-md-5 box p-4">
+        <div class="row">
+            <div class="col-lg-12 text-justify">
+                <h4 class="mb-4 bt-color IRANSansWeb_Medium">لیست کافه های کانون کارآفرینی استان آذربایجان غربی</h4>
+
+
+                <table class="table table-bordered table-hover table-striped">
+                    <thead class="grad-bg text-white">
+                        <tr>
+                            <th>ردیف</th>
+                            <th>نام کافه</th>
+                            <th>شهرستان</th>
+                            <th>نام مدیر کافه</th>
+                            <th>نام راهبر کافه</th>
+                            <th>همراه مدیر کافه</th>
+                            <th>همراه راهبر کافه</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model.EntrepreneurCafe)
+                    {
+                        <tr>
+
+                            <td>@item.Id</td>
+                            <td>@item.CafeName</td>
+                            <td>@item.CafeCity</td>
+                            <td>@item.CafeManager</td>
+                            <td>@item.CafeLeader</td>
+                            <td>@item.CafeManagerMobile</td>
+                            <td>@item.CafeLeaderMobile</td>
+
+                        </tr>
+                    }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

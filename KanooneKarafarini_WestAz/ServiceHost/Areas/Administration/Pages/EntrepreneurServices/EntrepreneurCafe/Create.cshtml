@@ -1,0 +1,72 @@
+﻿@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.EntrepreneurCafe.CreateEntrepreneurCafe
+
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ایجاد کافه کارآفرینی جدید</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Create"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CafeName" class="control-label">نام کافه</label>
+                    <input type="text" class="form-control" asp-for="CafeName">
+                    <span asp-validation-for="CafeName" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CafeCity" class="control-label">شهرستان</label>
+                    <input type="text" class="form-control" asp-for="CafeCity">
+                    <span asp-validation-for="CafeCity" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CafeManager" class="control-label">نام مدیر کافه</label>
+                    <input type="text" class="form-control" asp-for="CafeManager">
+                    <span asp-validation-for="CafeManager" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CafeLeader" class="control-label">نام راهبر کافه</label>
+                    <input type="text" class="form-control" asp-for="CafeLeader">
+                    <span asp-validation-for="CafeLeader" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CafeManagerMobile" class="control-label">موبایل مدیر کافه</label>
+                    <input type="text" class="form-control" asp-for="CafeManagerMobile">
+                    <span asp-validation-for="CafeManagerMobile" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CafeLeaderMobile" class="control-label">موبایل راهبر کافه</label>
+                    <input type="text" class="form-control" asp-for="CafeLeaderMobile">
+                    <span asp-validation-for="CafeLeaderMobile" class="error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد کافه کارآفرینی</button>
+    </div>
+</form>
