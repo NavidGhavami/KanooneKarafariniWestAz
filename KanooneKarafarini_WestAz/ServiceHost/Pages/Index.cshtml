@@ -6,98 +6,13 @@
 
 <section class="container mt-2">
     <div class="row">
-        <div class="col-lg-3 pt-1 order-lg-1 order-2 text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-6 mb-3">
-                        <a href="#"><img src="~/Theme/assets/Images/banner1-min-1.png" class="img-fluid rad12"></a>
-                    </div>
-                    <div class="col-lg-12 col-6 mb-3">
-                        <a href="#"><img src="~/Theme/assets/Images/banner1-min-2.png" class="img-fluid rad12"></a>
-                    </div>
-                    <div class="col-lg-12 col-6 mb-3">
-                        <a href="#"><img src="~/Theme/assets/Images/banner1-min-3.png" class="img-fluid rad12"></a>
-                    </div>
-                    <div class="col-lg-12 col-6 mb-2">
-                        <a href="#"><img src="~/Theme/assets/Images/banner1-min-4.png" class="img-fluid rad12"></a>
-                    </div>
-                    <img src="~/Theme/assets/Images/foot.png" class="mx-auto text-center" />
-                </div>
-            </div>
-        </div>
+        @await  Component.InvokeAsync("Banners")
         @await Component.InvokeAsync("Slider")
     </div>
 
 </section>
 
-<section class="container mt-4 text-center">
-    <h5 class="IRANSansWeb_Medium  bt-color">خدمات ما</h5>
-    <p>کلیه خدمات قابل ارائه لورم ایپسوم از صنعت چاپ </p>
-    <div id="owl-Service" class="owl-carousel">
-        <div class="card mx-1">
-            <div class="card-body">
-                <a href="#">
-                    <img class="rounded-circle" src="~/Theme/assets/Images/11.jpg" alt="">
-                </a>
-                <h6>عنوان یک</h6>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                <a href="#" class="btn btn-grad px-5 text-white mt-3 rad25">مشاهده</a>
-            </div>
-        </div>
-        <div class="card mx-1">
-            <div class="card-body">
-                <a href="#">
-                    <img class="rounded-circle" src="~/Theme/assets/Images/12.jpg" alt="">
-                </a>
-                <h6>عنوان دو</h6>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                <a href="#" class="btn btn-grad px-5 text-white mt-3 rad25">مشاهده</a>
-            </div>
-        </div>
-        <div class="card mx-1">
-            <div class="card-body">
-                <a href="#">
-                    <img class="rounded-circle" src="~/Theme/assets/Images/11.jpg" alt="">
-                </a>
-                <h6>عنوان سه</h6>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                <a href="#" class="btn btn-grad px-5 text-white mt-3 rad25">مشاهده</a>
-            </div>
-        </div>
-        <div class="card mx-1">
-            <div class="card-body">
-                <a href="#">
-                    <img class="rounded-circle" src="~/Theme/assets/Images/14.jpg" alt="">
-                </a>
-                <h6>عنوان چهار</h6>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                <a href="#" class="btn btn-grad px-5 text-white mt-3 rad25">مشاهده</a>
-            </div>
-        </div>
-        <div class="card mx-1">
-            <div class="card-body">
-                <a href="#">
-                    <img class="rounded-circle" src="~/Theme/assets/Images/16.jpg" alt="">
-                </a>
-                <h6>عنوان پنج</h6>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                <a href="#" class="btn btn-grad px-5 text-white mt-3 rad25">مشاهده</a>
-            </div>
-        </div>
-        <div class="card mx-1">
-            <div class="card-body">
-                <a href="#">
-                    <img class="rounded-circle" src="~/Theme/assets/Images/12.jpg" alt="">
-                </a>
-                <h6>عنوان شش</h6>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                <a href="#" class="btn btn-grad px-5 text-white mt-3 rad25">مشاهده</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+@await Component.InvokeAsync("SliderMenu")
 
 
 @await Component.InvokeAsync("Articles")

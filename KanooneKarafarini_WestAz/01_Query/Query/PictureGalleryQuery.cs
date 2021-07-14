@@ -23,8 +23,7 @@ namespace _01_Query.Query
                     Picture = x.Picture,
                     PictureAlt = x.PictureAlt,
                     PictureTitle = x.PictureTitle,
-                })
-                .ToList();
+                }).ToList();
         }
     }
 }
