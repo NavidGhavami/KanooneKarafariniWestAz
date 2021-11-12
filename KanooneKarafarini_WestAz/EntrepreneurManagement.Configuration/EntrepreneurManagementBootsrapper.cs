@@ -1,11 +1,13 @@
 ﻿using _01_Query.Contract.CounselingCenter;
 using _01_Query.Contract.EntrepreneurCafe;
+using _01_Query.Contract.IntroduceArticle;
 using _01_Query.Contract.IntroduceEntrepreneur;
 using _01_Query.Query;
 using EntrepreneurManagement.Application;
 using EntrepreneurManagement.Application.Contract.BenefactorEntrepreneur;
 using EntrepreneurManagement.Application.Contract.EntrepreneurServices.CounselingCenter;
 using EntrepreneurManagement.Application.Contract.EntrepreneurServices.EntrepreneurCafe;
+using EntrepreneurManagement.Application.Contract.EntrepreneurServices.IntroduceArticle;
 using EntrepreneurManagement.Application.Contract.EntrepreneurServices.IntroduceEntrepreneur;
 using EntrepreneurManagement.Application.Contract.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Application.Contract.LegalEntrepreneur;
@@ -15,6 +17,7 @@ using EntrepreneurManagement.Application.Contract.TrueEntrepreneur;
 using EntrepreneurManagement.Domain.BenefactorEntrepreneur;
 using EntrepreneurManagement.Domain.EntrepreneurServices.CouncelingCenter;
 using EntrepreneurManagement.Domain.EntrepreneurServices.EntrepreneurCafe;
+using EntrepreneurManagement.Domain.EntrepreneurServices.IntroduceArticle;
 using EntrepreneurManagement.Domain.EntrepreneurServices.IntroduceEntrepreneur;
 using EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Domain.LegalEntrepreneur;
@@ -60,11 +63,15 @@ namespace EntrepreneurManagement.Configuration
             services.AddTransient<IIntroduceEntrepreneurApplication, IntroduceEntrepreneurApplication>();
             services.AddTransient<IIntroduceEntrepreneurRepository, IntroduceEntrepreneurRepository>();
 
+            services.AddTransient<IIntroduceArticleApplication, IntroduceArticleApplication>();
+            services.AddTransient<IIntroduceArticleRepository, IntroduceArticleRepository>();
+
 
 
             services.AddTransient<ICounselingCenterQuery, CounselingCenterQuery>();
             services.AddTransient<IEntrepreneurCafeQuery, EntrepreneurCafeQuery>();
             services.AddTransient<IIntroduceEntrepreneurQuery, IntroduceEntrepreneurQuery>();
+            services.AddTransient<IIntroduceArticleQuery, IntroduceArticleQuery>();
 
 
 

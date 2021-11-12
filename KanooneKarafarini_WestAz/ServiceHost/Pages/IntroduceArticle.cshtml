@@ -1,0 +1,48 @@
+﻿@page
+@model ServiceHost.Pages.IntroduceArticleModel
+
+
+@{
+    ViewData["Title"] = "معرفی مقالات و پاورپوینت های حوزه کسب و کار و کارآفرینی";
+}
+
+<section class="container-fluid mt-3">
+    <div class="container p-md-5 box p-4">
+        <div class="row">
+            <div class="col-lg-12 text-justify">
+                <h4 class="mb-4 bt-color IRANSansWeb_Medium">معرفی مقالات و پاورپوینت های حوزه کسب و کار و کارآفرینی استان آذربایجان غربی</h4>
+
+                <table class="table table-bordered table-hover table-striped">
+                    <thead class="grad-bg text-white">
+                    <tr>
+                        <th>ردیف</th>
+                        <th>تصویر</th>
+                        <th>عنوان</th>
+                        <th>حوزه</th>
+                        <th>دانلود مقاله/فایل</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model.IntroduceArticle)
+                    {
+                        <tr>
+
+                            <td>@item.Id</td>
+                            <td>
+                                <img src="~/Pictures/@item.Photo" style="width: 70px; height: 70px" />
+                            </td>
+                            <td>@item.Title</td>
+                            <td>@item.StateTitle</td>
+                            <td>
+                                <a class="btn btn-primary btn-lg" asp-page-handler="DownloadResume" asp-route-id="@item.Id">دانلود</a>
+                            </td>
+
+                        </tr>
+                    }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

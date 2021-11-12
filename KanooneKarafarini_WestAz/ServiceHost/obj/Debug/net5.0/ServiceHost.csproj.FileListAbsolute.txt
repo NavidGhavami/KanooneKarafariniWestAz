@@ -217,3 +217,8 @@ E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_We
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\EntrepreneurServices\IntroduceEntrepreneur\Create.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\EntrepreneurServices\IntroduceEntrepreneur\Edit.cshtml.g.cs
 E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\IntroduceEntrepreneur.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\EntrepreneurServices\IntroduceArticle\Create.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\EntrepreneurServices\IntroduceArticle\Edit.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\EntrepreneurServices\IntroduceArticle\Index.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\EntrepreneurServices\IntroduceArticle\Information.cshtml.g.cs
+E:\Programming\Codes and projects\Kanoone Karafarini WestAz\KanooneKarafarini_WestAz\ServiceHost\obj\Debug\net5.0\Razor\Pages\IntroduceArticle.cshtml.g.cs

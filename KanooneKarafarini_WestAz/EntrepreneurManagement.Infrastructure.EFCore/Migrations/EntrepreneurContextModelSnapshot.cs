@@ -168,6 +168,37 @@ namespace EntrepreneurManagement.Infrastructure.EFCore.Migrations
                     b.ToTable("EntrepreneurCafe");
                 });
 
+            modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.IntroduceArticle.IntroduceArticle", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("File")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StateTitle")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("IntroduceArticle");
+                });
+
             modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.IntroduceEntrepreneur.IntroduceEntrepreneur", b =>
                 {
                     b.Property<long>("Id")

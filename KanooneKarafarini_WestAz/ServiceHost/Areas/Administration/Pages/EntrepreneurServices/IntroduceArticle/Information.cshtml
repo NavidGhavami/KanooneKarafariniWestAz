@@ -1,0 +1,51 @@
+﻿@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.IntroduceArticle.IntroduceArticleViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">مقاله: @Model.Title</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>تصویر</th>
+                <th>عنوان مقاله</th>
+                <th>حوزه</th>
+                <th>تاریخ ثبت</th>
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>
+                    <img src="~/Pictures/@Model.Photo" style="width: 70px; height: 70px" />
+                </td>
+                <td>@Model.Title</td>
+                <td>@Model.StateTitle</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+
