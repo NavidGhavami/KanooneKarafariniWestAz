@@ -1,6 +1,7 @@
 ﻿using EntrepreneurManagement.Domain.BenefactorEntrepreneur;
 using EntrepreneurManagement.Domain.EntrepreneurServices.CouncelingCenter;
 using EntrepreneurManagement.Domain.EntrepreneurServices.EntrepreneurCafe;
+using EntrepreneurManagement.Domain.EntrepreneurServices.IntroduceEntrepreneur;
 using EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea;
 using EntrepreneurManagement.Domain.LegalEntrepreneur;
 using EntrepreneurManagement.Domain.RahyarEntrepreneur;
@@ -21,6 +22,7 @@ namespace EntrepreneurManagement.Infrastructure.EFCore
         public DbSet<SubmitIdea> SubmitIdeas { get; set; }
         public DbSet<CounselingCenter> CounselingCenters { get; set; }
         public DbSet<EntrepreneurCafe> EntrepreneurCafes { get; set; }
+        public DbSet<IntroduceEntrepreneur> IntroduceEntrepreneurs { get; set; }
 
 
         public EntrepreneurContext(DbContextOptions<EntrepreneurContext> options) : base(options)

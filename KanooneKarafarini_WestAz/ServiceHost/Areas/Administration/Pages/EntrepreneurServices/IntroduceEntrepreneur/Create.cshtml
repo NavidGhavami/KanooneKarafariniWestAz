@@ -1,0 +1,82 @@
+﻿@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.IntroduceEntrepreneur.CreateIntroduceEntrepreneur
+
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ایجاد کارآفرین جدید</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Create"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data"> 
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Fullname" class="control-label">نام و نام خانوادگی</label>
+                    <input type="text" class="form-control" asp-for="Fullname">
+                    <span asp-validation-for="Fullname" class="error"></span>
+                </div>
+            </div><div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Job" class="control-label">سمت/شغل</label>
+                    <input type="text" class="form-control" asp-for="Job">
+                    <span asp-validation-for="Job" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <select class="form-control" asp-for="StateTitle">
+                        <option value="0">
+                            حوزه را انتخاب کنید ...
+                        </option>
+                        <option value="استانی">
+                            استانی
+                        </option>
+                        <option value="ملّی">
+                            ملّی
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Photo" class="control-label">آپلود تصویر</label>
+                    <input type="file" class="form-control" asp-for="Photo">
+                    <span asp-validation-for="Photo" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ResumeFile" class="control-label">آپلود رزومه</label>
+                    <input type="file" class="form-control" asp-for="ResumeFile">
+                    <span asp-validation-for="ResumeFile" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="ResumeDescription" class="control-label">توضیحات</label>
+                    <textarea class="form-control autogrow" asp-for="ResumeDescription"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="ResumeDescription" class="error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+    <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد کارآفرین</button>
+</div>
+</form>

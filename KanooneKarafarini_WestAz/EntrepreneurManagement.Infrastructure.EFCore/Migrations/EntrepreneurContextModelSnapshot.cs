@@ -168,6 +168,45 @@ namespace EntrepreneurManagement.Infrastructure.EFCore.Migrations
                     b.ToTable("EntrepreneurCafe");
                 });
 
+            modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.IntroduceEntrepreneur.IntroduceEntrepreneur", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Fullname")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("Job")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResumeDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResumeFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StateTitle")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("IntroduceEntrepreneur");
+                });
+
             modelBuilder.Entity("EntrepreneurManagement.Domain.EntrepreneurServices.SubmitIdea.SubmitIdea", b =>
                 {
                     b.Property<long>("Id")

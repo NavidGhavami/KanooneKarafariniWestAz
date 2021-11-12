@@ -1,0 +1,53 @@
+﻿@model EntrepreneurManagement.Application.Contract.EntrepreneurServices.IntroduceEntrepreneur.IntroduceEntrepreneurViewModel
+
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">کارآفرین حقیقی: @Model.Fullname</h4>
+</div>
+
+<div class="modal-body">
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>تصویر</th>
+                <th>نام و نام خانوادگی</th>
+                <th>سمت/شغل</th>
+                <th>توضیحات</th>
+                <th>تاریخ ثبت نام</th>
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>
+                    <img src="~/Pictures/@Model.Photo" style="width: 70px; height: 70px" />
+                </td>
+                <td>@Model.Fullname</td>
+                <td>@Model.Job</td>
+                <td>@Model.ResumeDescription</td>
+                <td>@Model.CreationDate</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>
+
