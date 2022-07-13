@@ -6506,19 +6506,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\navid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\0_Framework\\0_Framework.csproj",
+      "projectUniqueName": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\0_Framework\\0_Framework.csproj",
       "projectName": "0_Framework",
-      "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\0_Framework\\0_Framework.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\0_Framework\\obj\\",
+      "projectPath": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\0_Framework\\0_Framework.csproj",
+      "packagesPath": "C:\\Users\\navid\\.nuget\\packages\\",
+      "outputPath": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\0_Framework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\navid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6596,7 +6596,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

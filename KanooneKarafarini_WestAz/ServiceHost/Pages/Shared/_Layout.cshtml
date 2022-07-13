@@ -65,13 +65,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-sm-5 d-lg-block d-none">
-                    <a asp-page="/Index"><img src="~/Theme/assets/Images/logo2.png" class="img-fluid" /></a>
+                    <a asp-page="/Index"><img src="~/Theme/assets/Images/logo2.png" alt="کانون کارآفرینی استان آذربایجان غربی" title="کانون کارآفرینی استان آذربایجان غربی" class="img-fluid" /></a>
                 </div>
 
                 <div class="col-lg-3 col-6 mr-auto">
                     <div class="d-flex flex-column">
                         <span class="text-white">
-                            امروز : @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                            امروز : @DateTime.Now.ToFarsi()
                         </span>
                         <span class="text-white">
                             @if (AuthHelper.IsAuthenticated())

@@ -6466,19 +6466,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\navid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application\\BlogManagement.Application.csproj",
+      "projectUniqueName": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application\\BlogManagement.Application.csproj",
       "projectName": "BlogManagement.Application",
-      "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application\\BlogManagement.Application.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application\\obj\\",
+      "projectPath": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application\\BlogManagement.Application.csproj",
+      "packagesPath": "C:\\Users\\navid\\.nuget\\packages\\",
+      "outputPath": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\navid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6492,11 +6492,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
-              "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
+            "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
+              "projectPath": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
             },
-            "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
-              "projectPath": "E:\\Programming\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+            "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+              "projectPath": "E:\\Codes and projects\\Kanoone Karafarini WestAz\\KanooneKarafarini_WestAz\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
             }
           }
         }
@@ -6525,7 +6525,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
